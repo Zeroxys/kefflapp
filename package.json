@@ -25,6 +25,7 @@
     "react-native-linear-gradient": "^2.4.0",
     "react-native-maps": "^0.21.0",
     "react-native-maps-directions": "^1.6.0",
+    "react-native-splash-screen": "^3.0.9",
     "tcomb-form-native": "^0.6.13"
   }
 }
