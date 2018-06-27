@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jun 26 22:42:04 CDT 2018
+#Tue Jun 26 23:48:41 CDT 2018
 17.baseType=DIRECTORY
 4.path=lib/x86/libyoga.so
 25.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0

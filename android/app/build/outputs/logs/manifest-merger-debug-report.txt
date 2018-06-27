@@ -6,6 +6,7 @@ INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-26:12
 MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/016157d2ff5f60e6ebf7ca451ec012f2/AndroidManifest.xml:2:1-15:12
 MERGED from [com.android.support:appcompat-v7:23.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/2499e45a982bc4e6b344ba044b5a0d6e/AndroidManifest.xml:17:1-24:12
+MERGED from [:react-native-linear-gradient] /home/miguel/Dev/kefflapp/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:support-v4:23.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/0cc888e24089ab02ca1eeb201daec1ce/AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/06b3a3a7939d975a7d509ec3022e0c73/AndroidManifest.xml:10:1-18:12
 MERGED from [com.facebook.fresco:fresco:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/c835631e5feb4ef3de23e43a680a15ba/AndroidManifest.xml:2:1-9:12
@@ -97,6 +98,8 @@ MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches
 MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/016157d2ff5f60e6ebf7ca451ec012f2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:appcompat-v7:23.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/2499e45a982bc4e6b344ba044b5a0d6e/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:appcompat-v7:23.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/2499e45a982bc4e6b344ba044b5a0d6e/AndroidManifest.xml:20:5-43
+MERGED from [:react-native-linear-gradient] /home/miguel/Dev/kefflapp/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
+MERGED from [:react-native-linear-gradient] /home/miguel/Dev/kefflapp/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:support-v4:23.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/0cc888e24089ab02ca1eeb201daec1ce/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-v4-23.0.1.aar/0cc888e24089ab02ca1eeb201daec1ce/AndroidManifest.xml:20:5-43
 MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/06b3a3a7939d975a7d509ec3022e0c73/AndroidManifest.xml:14:5-16:41
