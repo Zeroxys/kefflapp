@@ -2,16 +2,27 @@ import React from 'react'
 import {StyleSheet} from 'react-native'
 import {View, Text} from 'react-native-animatable'
 
+
 import ButtonRegister from '../../components/UI/Button'
 
 const Opening = (props) => {
   return (
     <View style={styles.container}>
       <View animation={'zoomIn'} delay={3800} duration={400}>
+
         <ButtonRegister
-            color='#3b5998'
-            name="INGRESAR"
+          color='#3B5998'
+          name="INICIAR CON FACEBOOK"
+          onPress={() => props.onSignInPress()}/>
+
+        <Text style={styles.separatorOr}>{' '}</Text>
+
+        <ButtonRegister
+            color='#5A8DFE'
+            name="INGRESAR EMAIL"
             onPress={() => props.onSignInPress()}/>
+
+
       </View>
 
       <View style={styles.separatorContainer} animation={'zoomIn'} delay={4000} duration={400}>
@@ -22,8 +33,8 @@ const Opening = (props) => {
 
       <View animation={'zoomIn'} delay={4200} duration={400}>
         <ButtonRegister
-          color='#5A8DFE'
-          name="REGISTRAR"
+          color='#1976d2'
+          name="REGISTRATE"
           onPress={() => props.onCreateAccountPress()}/>
       </View>
     </View>

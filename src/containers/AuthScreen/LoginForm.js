@@ -1,13 +1,13 @@
 import React, {Component} from 'react'
 import {StyleSheet,Dimensions, TouchableOpacity} from 'react-native'
 import {View, Text} from 'react-native-animatable'
-import Icon from 'react-native-vector-icons/Ionicons'
 import t from 'tcomb-form-native'
+
 
 import {LoginUser, formStyles, options} from '../../utils/LoginModel'
 import ButtonRegister from '../../components/UI/Button'
 
-const {height, width} = Dimensions.get('window')
+const {width} = Dimensions.get('window')
 const Form = t.form.Form
 
 class LoginForm extends Component { 
