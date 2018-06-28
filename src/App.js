@@ -30,8 +30,6 @@ class App extends Component {
         }
       })
     }, 2500)
-
-    console.warn(this.state.isLoading)
   }
 
   //Simulate what the user is SignUp
