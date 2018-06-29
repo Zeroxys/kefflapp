@@ -1,5 +1,6 @@
 import React from 'react'
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native'
+import Icon from 'react-native-vector-icons/Ionicons'
 //import Modal from '../Modal/Modal'
 //import Aux from '../HOC/Aux'
 
@@ -9,18 +10,32 @@ const PriceBox = () => {
   }
 
   return (
-    <TouchableOpacity style={styles.gasContent} onPress={info}>
-      <Text style={styles.gasFont}>Precio del gas LP al dia:  $10 kg</Text>
-    </TouchableOpacity>
+    <View style={styles.mainContent}>
+      {/*Bar menu icon*/}
+      <TouchableOpacity style={{height : 50}}>
+        <Icon style={{marginRight: 300, top: 15}} color= "#424242" size={38} name="md-menu"/>
+      </TouchableOpacity>
+      
+      <View>
+        <TouchableOpacity style={styles.gasContent} onPress={info}>
+          <Text style={styles.gasFont}>Gas LP al dia:  $10 kg</Text>
+        </TouchableOpacity>
+      </View>  
+    </View>
   )
 }
 
 const styles = StyleSheet.create({
+  mainContent : {
+    justifyContent : 'center',
+    alignItems : 'center'
+  },
+
   gasContent : {
     marginTop : 15,
-    width  : 350,
+    width  : 220,
     padding : 10,
-    backgroundColor: 'rgba(245,243,243,0.80)'
+    backgroundColor: 'rgba(215,204,204,0.60)'
   },
 
   gasFont : {
