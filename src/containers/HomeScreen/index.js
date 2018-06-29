@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
-import {StyleSheet,Text, View, Dimensions} from 'react-native'
+import SideMenu from 'react-native-side-menu'
+import menu from './sideMenu.js'
+import {Dimensions} from 'react-native'
 
 import MapContent from '../../components/Map/MapContent'
 
@@ -83,7 +85,7 @@ class HomeScreen extends Component {
 
   render () {
     return (
-      <View>
+      <SideMenu menu={menu}>
         <MapContent
           marker = {this.state.marker}
           initialRegion = {this.state.currentLocation}
@@ -97,7 +99,7 @@ class HomeScreen extends Component {
 
           showTextInputPrice = {this.showTextInputPrice}
           showInputPrice = {this.state.showInputPrice}/>
-      </View>
+      </SideMenu>
     )
   }
 }
