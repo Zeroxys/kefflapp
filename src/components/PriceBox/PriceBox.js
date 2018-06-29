@@ -4,13 +4,13 @@ import Icon from 'react-native-vector-icons/Ionicons'
 //import Modal from '../Modal/Modal'
 //import Aux from '../HOC/Aux'
 
-const PriceBox = () => {
+const PriceBox = (props) => {
   const info = () => {
     alert('Informacion Actualizada sobre el precio del gas')
   }
 
   return (
-    <View style={styles.mainContent}>
+    <View style={styles.mainContent} onPress={() => props.openSidebar}>
       {/*Bar menu icon*/}
       <TouchableOpacity style={{height : 50}}>
         <Icon style={{marginRight: 300, top: 15}} color= "#424242" size={38} name="md-menu"/>

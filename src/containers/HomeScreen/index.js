@@ -8,17 +8,22 @@ import MapContent from '../../components/Map/MapContent'
 const {width, height} = Dimensions.get('window')
 
 class HomeScreen extends Component {
-  state = {
-    currentLocation : {
-      latitude : 17.989456,
-      longitude : -92.947506,
-      latitudeDelta : 0.0122,
-      longitudeDelta : width / height * 0.0122
-    },
-    expand : true,
-    marker : false,
-    visible : false,
-    showInputPrice : false
+  constructor (props) {
+    super(props)
+    this.state = {
+      currentLocation : {
+        latitude : 17.989456,
+        longitude : -92.947506,
+        latitudeDelta : 0.0122,
+        longitudeDelta : width / height * 0.0122
+      },
+      expand : true,
+      marker : false,
+      visible : false,
+      showInputPrice : false
+    }
+
+    this.locationHandler = this.locationHandler.bind(this)
   }
  
   showTextInputPrice = () => {
@@ -59,6 +64,7 @@ class HomeScreen extends Component {
   }
 
   locationHandler = event => {
+    console.warn('location handler...')
     let coords = event.nativeEvent.coordinate
 
     this.map.animateToRegion({
@@ -84,6 +90,7 @@ class HomeScreen extends Component {
   }
 
   render () {
+    console.warn(this.props)
     return (
       <SideMenu menu={Menu}>
         <MapContent

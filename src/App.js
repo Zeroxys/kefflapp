@@ -11,19 +11,23 @@ class App extends Component {
   constructor () {
     super()
     this.state = {
+      openSideBar :  false,
       isLoggedIn : false,
       isLoading : false,
       isAppReady : false     
     }
 
+    this._isOpenSideBar = this._isOpenSideBar.bind(this)
     this._facebookLoginManager = this._facebookLoginManager.bind(this)
   }
 
-  /*state = {
-    isLoggedIn : false,
-    isLoading : false,
-    isAppReady : false
-  }*/
+  _isOpenSideBar = () => {
+    this.setState(prevState => {
+      return {
+        openSideBar : !prevState.openSideBar 
+      }
+    })
+  }
 
   // Make the facebook Login..
   _facebookLoginManager = () => {
@@ -95,7 +99,9 @@ class App extends Component {
     let Screen = null
 
     if(this.state.isAppReady) {
-      Screen = <HomeScreen/>
+      Screen = <HomeScreen
+                  openSidebar={this._isOpenSideBar}
+                />
     } else {
       Screen = <AuthScreen
                   facebookLoginManager={this._facebookLoginManager}

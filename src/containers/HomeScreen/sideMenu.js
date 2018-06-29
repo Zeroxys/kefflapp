@@ -45,7 +45,7 @@ const style = StyleSheet.create({
 })
 
 
-const Menu = <View style={style.content}>
+const Menu = (props) => <View style={style.content}>
         <View style={style.header}>
           <Image
             style={{width: 50, height: 50}}
