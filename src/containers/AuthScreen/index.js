@@ -1,13 +1,10 @@
 import React, {Component} from 'react';
 import { StyleSheet, View, StatusBar, Dimensions} from 'react-native'
-import Icons from 'react-native-vector-icons/Ionicons'
 import LinearGradient from 'react-native-linear-gradient'
 import {Image} from 'react-native-animatable'
 
-import LogoImg from '../../assets/gas.png'
 import LogoImg2 from '../../assets/iconGas.png'
 import Opening from './opening'
-
 import SignupForm from './SignupForm'
 import LoginForm from './LoginForm'
 
@@ -15,9 +12,16 @@ const {width, height} = Dimensions.get('window')
 
 class AuthScreen extends Component {
 
-  state = {
-    visibleForm : null
+  constructor(props) {
+    super(props)
+    this.state = {
+      visibleForm : null
+    }
   }
+
+  /*state = {
+    visibleForm : null
+  }*/
 
   componentWillUpdate (nextProps) {
     if(!this.props.isLoggedIn && nextProps.isLoggedIn) {
@@ -41,13 +45,14 @@ class AuthScreen extends Component {
 
   render() {
 
-    let formStyle = !this.state.visibleForm ? { height: 0 } : { marginTop: 20 }
+    //let formStyle = !this.state.visibleForm ? { height: 0 } : { marginTop: 20 }
     let OpeningButtons = null
     let Forms = null
 
     //Show the Buttons component
     if(!this.state.visibleForm && !this.props.isLoggedIn) {
       OpeningButtons = <Opening
+        facebookLoginManager={this.props.facebookLoginManager}
         onCreateAccountPress={() => this._setVisibleForm('SIGNUP')}
         onSignInPress={() => this._setVisibleForm('LOGIN')}/>
     }

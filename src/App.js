@@ -1,17 +1,52 @@
 import React, {Component} from 'react';
 import {} from 'react-native';
 import SplashScreen from 'react-native-splash-screen'
+import {LoginManager, AccessToken} from 'react-native-fbsdk'
 
 import AuthScreen from './containers/AuthScreen/index'
 import HomeScreen from './containers/HomeScreen/index'
 
 class App extends Component {
 
-  state = {
+  constructor () {
+    super()
+    this.state = {
+      isLoggedIn : false,
+      isLoading : false,
+      isAppReady : false     
+    }
+
+    this._facebookLoginManager = this._facebookLoginManager.bind(this)
+  }
+
+  /*state = {
     isLoggedIn : false,
     isLoading : false,
     isAppReady : false
+  }*/
+
+  // Make the facebook Login..
+  _facebookLoginManager = () => {
+    LoginManager.logInWithReadPermissions(['public_profile']).then( res => {
+        if(res) {          
+          
+          this.setState( prevState => {
+            return {
+              isAppReady : prevState.isAppReady = true
+            }
+          })
+
+          console.warn(this.state.isAppReady)
+
+        }else {
+          alert('login cancelled')
+        }
+      }
+    ).catch( (err) => {
+      alert('login with error ' + err)
+    })
   }
+
 
   //Simulate what the user is Login
   _Login = (username, password) => {
@@ -62,6 +97,7 @@ class App extends Component {
       Screen = <HomeScreen/>
     } else {
       Screen = <AuthScreen
+                  facebookLoginManager={this._facebookLoginManager}
                   Login={this._Login}
                   Signup={this._SignUp}
                   isLoggedIn={this.state.isLoggedIn}

@@ -13,7 +13,7 @@ const Opening = (props) => {
         <ButtonRegister
           color='#3B5998'
           name="INICIAR CON FACEBOOK"
-          onPress={() => props.onSignInPress()}/>
+          onPress={() => props.facebookLoginManager()}/>
 
         <Text style={styles.separatorOr}>{' '}</Text>
 
