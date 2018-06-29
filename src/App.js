@@ -35,15 +35,16 @@ class App extends Component {
               isAppReady : prevState.isAppReady = true
             }
           })
-
-          console.warn(this.state.isAppReady)
-
         }else {
           alert('login cancelled')
         }
       }
     ).catch( (err) => {
-      alert('login with error ' + err)
+      this.setState( prevState => {
+        return {
+          isAppReady : prevState.isAppReady = true
+        }
+      })
     })
   }
 

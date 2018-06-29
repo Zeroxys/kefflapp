@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import SideMenu from 'react-native-side-menu'
-import menu from './sideMenu.js'
+import Menu from './sideMenu.js'
 import {Dimensions} from 'react-native'
 
 import MapContent from '../../components/Map/MapContent'
@@ -85,7 +85,7 @@ class HomeScreen extends Component {
 
   render () {
     return (
-      <SideMenu menu={menu}>
+      <SideMenu menu={Menu}>
         <MapContent
           marker = {this.state.marker}
           initialRegion = {this.state.currentLocation}
