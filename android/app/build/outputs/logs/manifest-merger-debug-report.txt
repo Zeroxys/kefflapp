@@ -1,253 +1,353 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12
+MERGED from [:react-native-onesignal] /home/miguel/Dev/kefflapp/node_modules/react-native-onesignal/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-fbsdk] /home/miguel/Dev/kefflapp/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:21:1-30:12
 MERGED from [:react-native-splash-screen] /home/miguel/Dev/kefflapp/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-14:12
 MERGED from [:react-native-vector-icons] /home/miguel/Dev/kefflapp/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/016157d2ff5f60e6ebf7ca451ec012f2/AndroidManifest.xml:2:1-15:12
-MERGED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/9846f3db771a873d7c592426f2973133/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-login:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/b0fee8ae09cec6771ab51f1420f40297/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-share:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-share-4.34.0.aar/ac83c2f5699f6dee4f7d8c498b8f7250/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:21:1-37:12
-MERGED from [com.android.support:appcompat-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/2a96ac095367c3498a3d624fab2c9524/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/1f0a3355fe6d716baa6d9f8a5e978492/AndroidManifest.xml:2:1-15:12
+MERGED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/15ddfcdadf5c44af45215082e5134981/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-login:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/cc3c87d361d5b575ad57181c75cdcd11/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-share:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-share-4.34.0.aar/4f6e8579330ec3554736dabd81f15326/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:21:1-37:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/AndroidManifest.xml:17:1-22:12
 MERGED from [:react-native-linear-gradient] /home/miguel/Dev/kefflapp/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-11:12
 MERGED from [:react-native-maps] /home/miguel/Dev/kefflapp/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:2:1-12:12
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:16:1-25:12
-MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.4.aar/4c9e4c73a91c253545f52d7fb4caab81/AndroidManifest.xml:16:1-21:12
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/06b3a3a7939d975a7d509ec3022e0c73/AndroidManifest.xml:10:1-18:12
-MERGED from [com.facebook.fresco:fresco:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/c835631e5feb4ef3de23e43a680a15ba/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/963c06bf9425df84205a443679a18eb3/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.soloader:soloader:0.1.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/c809321f82f0dd667aeb138b3695f496/AndroidManifest.xml:1:1-4:12
-MERGED from [org.webkit:android-jsc:r174650] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/d6f52f7751e97dbaa16d425b6e8df671/AndroidManifest.xml:1:1-3:12
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/26abd94f8a133c1a626ada3eb6f535bb/AndroidManifest.xml:2:1-13:12
-MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.4.aar/8f8e62ffd61ca44f0b38bac11c01dc50/AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.4.aar/83da3afb5570803075b27eaa8b802482/AndroidManifest.xml:16:1-23:12
-MERGED from [com.facebook.android:facebook-places:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-places-4.34.0.aar/4806dc97e5ea8fa06aaaadf781a255e7/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-applinks:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.34.0.aar/61fea66232326eb8591b0eb366bfc7c7/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-messenger:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/a6369dae9ed6412d27ea64bfaed7c928/AndroidManifest.xml:21:1-31:12
-MERGED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/7d7391e03b8b83a3cca9107ced39de0f/AndroidManifest.xml:21:1-35:12
-MERGED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:21:1-53:12
-MERGED from [com.facebook.fresco:drawee:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/1304b2e36535ba8f105ab2e389d25333/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/7fc9e08ecf51aba4a5d2edd788ae57d6/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/0ae8c6cee8f996be7b075fb45201688c/AndroidManifest.xml:2:1-9:12
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/cc8ff66f6f6a3d4f06d8dfc1bc964c46/AndroidManifest.xml:2:1-9:12
-MERGED from [com.android.support:support-v4:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/545a24f2cdd6acce34ada7afb83ea39f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/e7298e691c6d4c3342f825e7536cc8fc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/16a6486e2c1f28bf139521f3f1b35b77/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:cardview-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/e5625e75752c3a2e1133dcc908c142e2/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:customtabs:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/f6bb41aad0e16f687f7b9ba5c44b4708/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/ad26f52360b0dfa026bcede5281efbe1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/d6d8b2bb8f1bc1be1661dca58d9c1198/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/c4404e94541704fa4bd82e993b0f0a40/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/9e441104234915ab3c7e4f88f93c5aeb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/1e6946547286d030bf1c10efc7edeb74/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/miguel/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/5dff279f6083047d2674e7eeb784fc2e/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12
-INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+MERGED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:2:1-108:12
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-core:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/b06e776eb5b54811ed73437e628b04ca/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/0602263c5afd8f85263bc4c996a7a922/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:17:1-65:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/c605ca1c0a4147e721101df8a90aef0a/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/765bd040322ffee14167fbbd0ebaf97b/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/edf95f231bb1d608ded85d32ad686165/AndroidManifest.xml:2:1-16:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/4210e472a2d887fd03baddd06e18b65f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/b7b6128bbd59f06753e34f8f0507b034/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/e538aa2600f2fc4f0662c8ab501dc56b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/72928d66a4cc687312fa131a044daa01/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/998954c46b5780ec929bf5aaf453bd6a/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e144c08b266a429f7f086e93ec58e267/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/30bc5d63b21742cde9cfeb9b7bbe087c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/2fa0e5c50f8714f3c48b6f814ebf8bbc/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.android:facebook-places:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-places-4.34.0.aar/fcee799edcecba621c2fa33e904c003c/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-applinks:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.34.0.aar/754b7e38972a6e62d2851e24f2856cdc/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-messenger:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/aa5a99a1ec35821df0b512e9a9f0fa22/AndroidManifest.xml:21:1-31:12
+MERGED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/b8ae691983c84ed48277a879f604f999/AndroidManifest.xml:21:1-35:12
+MERGED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:21:1-53:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/4e65384564ff8c862cad235410c05d4d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/1017ff15b6adde3ac7dbb482d2e127fe/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/0f7c525e24e3cdd446b890895bfc259d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/fb4ff9f7dfda54e240ab133e6c09040b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customtabs:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/3144cfa18f5c4b9b9f53ab8dd75231ea/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/7436931da2efb08fd93251146b4f482b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/03693580ea085f0d5488438ebc8834ed/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/b3f718c5adae0b1616bbe96dde180542/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/f58230233ffc608a003cbf6a8208f5e7/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/1053fc73e1894ebcd43352b1537fafda/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/858b5ffd46f8118ceba2a10fe9e52776/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2c056a60b5d104a29b5e0cd6ddab9354/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/4767181a4aea444fb9695a225cf7261d/AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/ca04bcf64b8fbdac89cec52f6ed82fe7/AndroidManifest.xml:2:1-13:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/35e41d108f78448edad18c209ae8ec93/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/79933084b6bf14b733d03afaaa6a6fa8/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/6bd3d3cfaed334fa546f336465a48592/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/a5b3975a9c7c84fbc65d5dc1201c117e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/ae2d1dee1958f9d3ffcd2a92f09bf658/AndroidManifest.xml:17:1-24:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/miguel/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/946a76d665a84b69727a485f72f72e7c/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12
+INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12
 	package
 		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:2:5-27
 		INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12
 		INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12
 		INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:5:5-80
+MERGED from [:react-native-maps] /home/miguel/Dev/kefflapp/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
+MERGED from [:react-native-maps] /home/miguel/Dev/kefflapp/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:5:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:6:5-78
+	android:name
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:4:5-67
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:8:5-67
 MERGED from [:react-native-maps] /home/miguel/Dev/kefflapp/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-67
 MERGED from [:react-native-maps] /home/miguel/Dev/kefflapp/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:9:5-67
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:20:5-66
+MERGED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:17:5-67
+MERGED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:17:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:4:22-64
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:8:22-64
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:5:5-77
-MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/016157d2ff5f60e6ebf7ca451ec012f2/AndroidManifest.xml:11:5-78
-MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/016157d2ff5f60e6ebf7ca451ec012f2/AndroidManifest.xml:11:5-78
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:9:5-77
+MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/1f0a3355fe6d716baa6d9f8a5e978492/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/1f0a3355fe6d716baa6d9f8a5e978492/AndroidManifest.xml:11:5-78
 	android:name
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:5:22-75
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:9:22-75
 application
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:7:5-32:19
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:11:5-37:19
 MERGED from [:react-native-fbsdk] /home/miguel/Dev/kefflapp/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:5-20
 MERGED from [:react-native-fbsdk] /home/miguel/Dev/kefflapp/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:28:5-20
 MERGED from [:react-native-splash-screen] /home/miguel/Dev/kefflapp/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
 MERGED from [:react-native-splash-screen] /home/miguel/Dev/kefflapp/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:11:5-12:19
-MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/016157d2ff5f60e6ebf7ca451ec012f2/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/016157d2ff5f60e6ebf7ca451ec012f2/AndroidManifest.xml:13:5-20
-MERGED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/9846f3db771a873d7c592426f2973133/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/9846f3db771a873d7c592426f2973133/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/b0fee8ae09cec6771ab51f1420f40297/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-login:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/b0fee8ae09cec6771ab51f1420f40297/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-share-4.34.0.aar/ac83c2f5699f6dee4f7d8c498b8f7250/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-share:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-share-4.34.0.aar/ac83c2f5699f6dee4f7d8c498b8f7250/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:28:5-35:19
-MERGED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:28:5-35:19
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.4.aar/4c9e4c73a91c253545f52d7fb4caab81/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.4.aar/4c9e4c73a91c253545f52d7fb4caab81/AndroidManifest.xml:18:5-20:19
-MERGED from [com.facebook.soloader:soloader:0.1.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/c809321f82f0dd667aeb138b3695f496/AndroidManifest.xml:3:3-17
-MERGED from [com.facebook.soloader:soloader:0.1.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/c809321f82f0dd667aeb138b3695f496/AndroidManifest.xml:3:3-17
-MERGED from [org.webkit:android-jsc:r174650] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/d6f52f7751e97dbaa16d425b6e8df671/AndroidManifest.xml:2:3-17
-MERGED from [org.webkit:android-jsc:r174650] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/d6f52f7751e97dbaa16d425b6e8df671/AndroidManifest.xml:2:3-17
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/26abd94f8a133c1a626ada3eb6f535bb/AndroidManifest.xml:7:5-11:19
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/26abd94f8a133c1a626ada3eb6f535bb/AndroidManifest.xml:7:5-11:19
-MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.4.aar/8f8e62ffd61ca44f0b38bac11c01dc50/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.4.aar/8f8e62ffd61ca44f0b38bac11c01dc50/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.4.aar/83da3afb5570803075b27eaa8b802482/AndroidManifest.xml:19:5-21:19
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.4.aar/83da3afb5570803075b27eaa8b802482/AndroidManifest.xml:19:5-21:19
-MERGED from [com.facebook.android:facebook-places:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-places-4.34.0.aar/4806dc97e5ea8fa06aaaadf781a255e7/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-places:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-places-4.34.0.aar/4806dc97e5ea8fa06aaaadf781a255e7/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.34.0.aar/61fea66232326eb8591b0eb366bfc7c7/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-applinks:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.34.0.aar/61fea66232326eb8591b0eb366bfc7c7/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/a6369dae9ed6412d27ea64bfaed7c928/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-messenger:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/a6369dae9ed6412d27ea64bfaed7c928/AndroidManifest.xml:28:5-29:19
-MERGED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/7d7391e03b8b83a3cca9107ced39de0f/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/7d7391e03b8b83a3cca9107ced39de0f/AndroidManifest.xml:28:5-33:19
-MERGED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:28:5-51:19
-MERGED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/1f0a3355fe6d716baa6d9f8a5e978492/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/1f0a3355fe6d716baa6d9f8a5e978492/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/15ddfcdadf5c44af45215082e5134981/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/15ddfcdadf5c44af45215082e5134981/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/cc3c87d361d5b575ad57181c75cdcd11/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-login:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/cc3c87d361d5b575ad57181c75cdcd11/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-share-4.34.0.aar/4f6e8579330ec3554736dabd81f15326/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-share:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-share-4.34.0.aar/4f6e8579330ec3554736dabd81f15326/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:28:5-35:19
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:28:5-35:19
+MERGED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:49:5-106:19
+MERGED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:49:5-106:19
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-core:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/b06e776eb5b54811ed73437e628b04ca/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/b06e776eb5b54811ed73437e628b04ca/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/0602263c5afd8f85263bc4c996a7a922/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/0602263c5afd8f85263bc4c996a7a922/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:34:5-63:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/c605ca1c0a4147e721101df8a90aef0a/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/c605ca1c0a4147e721101df8a90aef0a/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/765bd040322ffee14167fbbd0ebaf97b/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/765bd040322ffee14167fbbd0ebaf97b/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/edf95f231bb1d608ded85d32ad686165/AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.firebase:firebase-common:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/edf95f231bb1d608ded85d32ad686165/AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/4210e472a2d887fd03baddd06e18b65f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/4210e472a2d887fd03baddd06e18b65f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/b7b6128bbd59f06753e34f8f0507b034/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/b7b6128bbd59f06753e34f8f0507b034/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/e538aa2600f2fc4f0662c8ab501dc56b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/e538aa2600f2fc4f0662c8ab501dc56b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/72928d66a4cc687312fa131a044daa01/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/72928d66a4cc687312fa131a044daa01/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/998954c46b5780ec929bf5aaf453bd6a/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/998954c46b5780ec929bf5aaf453bd6a/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e144c08b266a429f7f086e93ec58e267/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e144c08b266a429f7f086e93ec58e267/AndroidManifest.xml:22:5-26:19
+MERGED from [com.facebook.android:facebook-places:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-places-4.34.0.aar/fcee799edcecba621c2fa33e904c003c/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-places:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-places-4.34.0.aar/fcee799edcecba621c2fa33e904c003c/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.34.0.aar/754b7e38972a6e62d2851e24f2856cdc/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-applinks:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.34.0.aar/754b7e38972a6e62d2851e24f2856cdc/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/aa5a99a1ec35821df0b512e9a9f0fa22/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-messenger:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/aa5a99a1ec35821df0b512e9a9f0fa22/AndroidManifest.xml:28:5-29:19
+MERGED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/b8ae691983c84ed48277a879f604f999/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/b8ae691983c84ed48277a879f604f999/AndroidManifest.xml:28:5-33:19
+MERGED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:28:5-51:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2c056a60b5d104a29b5e0cd6ddab9354/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2c056a60b5d104a29b5e0cd6ddab9354/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/4767181a4aea444fb9695a225cf7261d/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/4767181a4aea444fb9695a225cf7261d/AndroidManifest.xml:2:3-17
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/ca04bcf64b8fbdac89cec52f6ed82fe7/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/ca04bcf64b8fbdac89cec52f6ed82fe7/AndroidManifest.xml:7:5-11:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/ae2d1dee1958f9d3ffcd2a92f09bf658/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/ae2d1dee1958f9d3ffcd2a92f09bf658/AndroidManifest.xml:22:5-20
 	android:supportsRtl
-		ADDED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/9846f3db771a873d7c592426f2973133/AndroidManifest.xml:28:18-44
+		ADDED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/15ddfcdadf5c44af45215082e5134981/AndroidManifest.xml:28:18-44
 	android:label
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:9:7-39
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:13:7-39
 	android:icon
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:10:7-41
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:14:7-41
 	android:allowBackup
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:11:7-34
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:15:7-34
 	android:theme
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:16:7-38
+	android:name
 		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:12:7-38
-	android:name
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:8:7-38
 activity#com.kefflapp.MainActivity
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:13:7-22:18
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:17:7-27:18
 	android:label
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:19:9-41
+	android:launchMode
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:22:9-39
 	android:windowSoftInputMode
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:17:9-51
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:21:9-51
 	android:configChanges
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:16:9-79
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:20:9-79
 	android:name
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:14:9-37
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:18:9-37
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:18:9-21:25
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:23:9-26:25
 action#android.intent.action.MAIN
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:19:13-65
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:24:13-65
 	android:name
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:19:21-62
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:24:21-62
 category#android.intent.category.LAUNCHER
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:20:13-73
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:25:13-73
 	android:name
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:20:23-70
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:25:23-70
 activity#com.facebook.react.devsupport.DevSettingsActivity
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:23:7-84
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:28:7-84
 	android:name
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:23:17-81
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:28:17-81
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:25:7-27:66
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:30:7-32:66
 	android:value
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:27:9-64
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:32:9-64
 	android:name
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:26:9-54
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:31:9-54
 meta-data#com.facebook.sdk.ApplicationId
-ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:29:8-106
+ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:34:8-106
 	android:value
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:29:65-104
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:34:65-104
 	android:name
-		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:29:19-64
+		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:34:19-64
 uses-sdk
 INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
+MERGED from [:react-native-onesignal] /home/miguel/Dev/kefflapp/node_modules/react-native-onesignal/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-onesignal] /home/miguel/Dev/kefflapp/node_modules/react-native-onesignal/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-fbsdk] /home/miguel/Dev/kefflapp/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-26:41
 MERGED from [:react-native-fbsdk] /home/miguel/Dev/kefflapp/node_modules/react-native-fbsdk/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:24:5-26:41
 MERGED from [:react-native-splash-screen] /home/miguel/Dev/kefflapp/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-splash-screen] /home/miguel/Dev/kefflapp/node_modules/react-native-splash-screen/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/miguel/Dev/kefflapp/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-vector-icons] /home/miguel/Dev/kefflapp/node_modules/react-native-vector-icons/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/016157d2ff5f60e6ebf7ca451ec012f2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/016157d2ff5f60e6ebf7ca451ec012f2/AndroidManifest.xml:7:5-9:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/9846f3db771a873d7c592426f2973133/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/9846f3db771a873d7c592426f2973133/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/b0fee8ae09cec6771ab51f1420f40297/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-login:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/b0fee8ae09cec6771ab51f1420f40297/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-share-4.34.0.aar/ac83c2f5699f6dee4f7d8c498b8f7250/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-share:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-share-4.34.0.aar/ac83c2f5699f6dee4f7d8c498b8f7250/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:24:5-26:41
-MERGED from [com.android.support:appcompat-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/2a96ac095367c3498a3d624fab2c9524/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/2a96ac095367c3498a3d624fab2c9524/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/1f0a3355fe6d716baa6d9f8a5e978492/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/1f0a3355fe6d716baa6d9f8a5e978492/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/15ddfcdadf5c44af45215082e5134981/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-android-sdk:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-android-sdk-4.34.0.aar/15ddfcdadf5c44af45215082e5134981/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/cc3c87d361d5b575ad57181c75cdcd11/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-login:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/cc3c87d361d5b575ad57181c75cdcd11/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-share-4.34.0.aar/4f6e8579330ec3554736dabd81f15326/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-share:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-share-4.34.0.aar/4f6e8579330ec3554736dabd81f15326/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/AndroidManifest.xml:20:5-44
 MERGED from [:react-native-linear-gradient] /home/miguel/Dev/kefflapp/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-linear-gradient] /home/miguel/Dev/kefflapp/node_modules/react-native-linear-gradient/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:7:5-9:41
 MERGED from [:react-native-maps] /home/miguel/Dev/kefflapp/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:react-native-maps] /home/miguel/Dev/kefflapp/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:23:5-43
-MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:23:5-43
-MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.4.aar/4c9e4c73a91c253545f52d7fb4caab81/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.4.aar/4c9e4c73a91c253545f52d7fb4caab81/AndroidManifest.xml:17:5-43
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/06b3a3a7939d975a7d509ec3022e0c73/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/06b3a3a7939d975a7d509ec3022e0c73/AndroidManifest.xml:14:5-16:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/c835631e5feb4ef3de23e43a680a15ba/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fresco:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/c835631e5feb4ef3de23e43a680a15ba/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/963c06bf9425df84205a443679a18eb3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/963c06bf9425df84205a443679a18eb3/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.soloader:soloader:0.1.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/c809321f82f0dd667aeb138b3695f496/AndroidManifest.xml:2:3-70
-MERGED from [com.facebook.soloader:soloader:0.1.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/c809321f82f0dd667aeb138b3695f496/AndroidManifest.xml:2:3-70
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/26abd94f8a133c1a626ada3eb6f535bb/AndroidManifest.xml:5:5-43
-MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/26abd94f8a133c1a626ada3eb6f535bb/AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.4.aar/8f8e62ffd61ca44f0b38bac11c01dc50/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-tasks-10.2.4.aar/8f8e62ffd61ca44f0b38bac11c01dc50/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.4.aar/83da3afb5570803075b27eaa8b802482/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.4.aar/83da3afb5570803075b27eaa8b802482/AndroidManifest.xml:17:5-43
-MERGED from [com.facebook.android:facebook-places:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-places-4.34.0.aar/4806dc97e5ea8fa06aaaadf781a255e7/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-places:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-places-4.34.0.aar/4806dc97e5ea8fa06aaaadf781a255e7/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.34.0.aar/61fea66232326eb8591b0eb366bfc7c7/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-applinks:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.34.0.aar/61fea66232326eb8591b0eb366bfc7c7/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/a6369dae9ed6412d27ea64bfaed7c928/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-messenger:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/a6369dae9ed6412d27ea64bfaed7c928/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/7d7391e03b8b83a3cca9107ced39de0f/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/7d7391e03b8b83a3cca9107ced39de0f/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:24:5-26:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/1304b2e36535ba8f105ab2e389d25333/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:drawee:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/1304b2e36535ba8f105ab2e389d25333/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/7fc9e08ecf51aba4a5d2edd788ae57d6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/7fc9e08ecf51aba4a5d2edd788ae57d6/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/0ae8c6cee8f996be7b075fb45201688c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/0ae8c6cee8f996be7b075fb45201688c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/cc8ff66f6f6a3d4f06d8dfc1bc964c46/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.fresco:fbcore:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/cc8ff66f6f6a3d4f06d8dfc1bc964c46/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:support-v4:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/545a24f2cdd6acce34ada7afb83ea39f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/545a24f2cdd6acce34ada7afb83ea39f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/e7298e691c6d4c3342f825e7536cc8fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/e7298e691c6d4c3342f825e7536cc8fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/16a6486e2c1f28bf139521f3f1b35b77/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/16a6486e2c1f28bf139521f3f1b35b77/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/e5625e75752c3a2e1133dcc908c142e2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/e5625e75752c3a2e1133dcc908c142e2/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/f6bb41aad0e16f687f7b9ba5c44b4708/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:customtabs:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/f6bb41aad0e16f687f7b9ba5c44b4708/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/ad26f52360b0dfa026bcede5281efbe1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/ad26f52360b0dfa026bcede5281efbe1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/d6d8b2bb8f1bc1be1661dca58d9c1198/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/d6d8b2bb8f1bc1be1661dca58d9c1198/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/c4404e94541704fa4bd82e993b0f0a40/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/c4404e94541704fa4bd82e993b0f0a40/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/9e441104234915ab3c7e4f88f93c5aeb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/9e441104234915ab3c7e4f88f93c5aeb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/1e6946547286d030bf1c10efc7edeb74/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/1e6946547286d030bf1c10efc7edeb74/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/miguel/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/5dff279f6083047d2674e7eeb784fc2e/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/miguel/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/5dff279f6083047d2674e7eeb784fc2e/AndroidManifest.xml:20:5-22:41
+MERGED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:5:5-44
+MERGED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/b06e776eb5b54811ed73437e628b04ca/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.1.aar/b06e776eb5b54811ed73437e628b04ca/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/0602263c5afd8f85263bc4c996a7a922/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-location-15.0.1.aar/0602263c5afd8f85263bc4c996a7a922/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/c605ca1c0a4147e721101df8a90aef0a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.0.aar/c605ca1c0a4147e721101df8a90aef0a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/765bd040322ffee14167fbbd0ebaf97b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/765bd040322ffee14167fbbd0ebaf97b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/edf95f231bb1d608ded85d32ad686165/AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.firebase:firebase-common:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/edf95f231bb1d608ded85d32ad686165/AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/4210e472a2d887fd03baddd06e18b65f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/4210e472a2d887fd03baddd06e18b65f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/b7b6128bbd59f06753e34f8f0507b034/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-15.0.1.aar/b7b6128bbd59f06753e34f8f0507b034/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/e538aa2600f2fc4f0662c8ab501dc56b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-stats-15.0.1.aar/e538aa2600f2fc4f0662c8ab501dc56b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/72928d66a4cc687312fa131a044daa01/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-15.0.1.aar/72928d66a4cc687312fa131a044daa01/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/998954c46b5780ec929bf5aaf453bd6a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-16.0.0.aar/998954c46b5780ec929bf5aaf453bd6a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e144c08b266a429f7f086e93ec58e267/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e144c08b266a429f7f086e93ec58e267/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/30bc5d63b21742cde9cfeb9b7bbe087c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/30bc5d63b21742cde9cfeb9b7bbe087c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/2fa0e5c50f8714f3c48b6f814ebf8bbc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/2fa0e5c50f8714f3c48b6f814ebf8bbc/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.android:facebook-places:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-places-4.34.0.aar/fcee799edcecba621c2fa33e904c003c/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-places:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-places-4.34.0.aar/fcee799edcecba621c2fa33e904c003c/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.34.0.aar/754b7e38972a6e62d2851e24f2856cdc/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-applinks:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-applinks-4.34.0.aar/754b7e38972a6e62d2851e24f2856cdc/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/aa5a99a1ec35821df0b512e9a9f0fa22/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-messenger:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/aa5a99a1ec35821df0b512e9a9f0fa22/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/b8ae691983c84ed48277a879f604f999/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/b8ae691983c84ed48277a879f604f999/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:24:5-26:41
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/4e65384564ff8c862cad235410c05d4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/4e65384564ff8c862cad235410c05d4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/1017ff15b6adde3ac7dbb482d2e127fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/1017ff15b6adde3ac7dbb482d2e127fe/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/0f7c525e24e3cdd446b890895bfc259d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/0f7c525e24e3cdd446b890895bfc259d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/fb4ff9f7dfda54e240ab133e6c09040b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/fb4ff9f7dfda54e240ab133e6c09040b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/3144cfa18f5c4b9b9f53ab8dd75231ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/customtabs-27.0.2.aar/3144cfa18f5c4b9b9f53ab8dd75231ea/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/7436931da2efb08fd93251146b4f482b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/7436931da2efb08fd93251146b4f482b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/03693580ea085f0d5488438ebc8834ed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/03693580ea085f0d5488438ebc8834ed/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/b3f718c5adae0b1616bbe96dde180542/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/b3f718c5adae0b1616bbe96dde180542/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/f58230233ffc608a003cbf6a8208f5e7/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/f58230233ffc608a003cbf6a8208f5e7/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/1053fc73e1894ebcd43352b1537fafda/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/1053fc73e1894ebcd43352b1537fafda/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/858b5ffd46f8118ceba2a10fe9e52776/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/858b5ffd46f8118ceba2a10fe9e52776/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2c056a60b5d104a29b5e0cd6ddab9354/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/2c056a60b5d104a29b5e0cd6ddab9354/AndroidManifest.xml:2:3-70
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/ca04bcf64b8fbdac89cec52f6ed82fe7/AndroidManifest.xml:5:5-43
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/ca04bcf64b8fbdac89cec52f6ed82fe7/AndroidManifest.xml:5:5-43
+MERGED from [com.facebook.fresco:drawee:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/35e41d108f78448edad18c209ae8ec93/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/35e41d108f78448edad18c209ae8ec93/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/79933084b6bf14b733d03afaaa6a6fa8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/79933084b6bf14b733d03afaaa6a6fa8/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/6bd3d3cfaed334fa546f336465a48592/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/6bd3d3cfaed334fa546f336465a48592/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/a5b3975a9c7c84fbc65d5dc1201c117e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/a5b3975a9c7c84fbc65d5dc1201c117e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/ae2d1dee1958f9d3ffcd2a92f09bf658/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.0.aar/ae2d1dee1958f9d3ffcd2a92f09bf658/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/miguel/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/946a76d665a84b69727a485f72f72e7c/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/miguel/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/946a76d665a84b69727a485f72f72e7c/AndroidManifest.xml:20:5-22:41
 INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
@@ -259,82 +359,434 @@ INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 		ADDED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 		INJECTED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml
 activity#com.facebook.FacebookActivity
-ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:29:9-32:66
+ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:29:9-32:66
 	android:configChanges
-		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:31:13-96
+		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:31:13-96
 	android:theme
-		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:32:13-63
+		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:32:13-63
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:30:13-57
+		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:30:13-57
 activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:33:9-71
+ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:33:19-68
+		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:33:19-68
 activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:34:9-67
+ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:34:9-67
 	android:name
-		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/940803e04667ec6d8d52c09a6c380f63/AndroidManifest.xml:34:19-64
-uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from [:react-native-maps] /home/miguel/Dev/kefflapp/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:5-81
+		ADDED from [com.facebook.android:facebook-common:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-common-4.34.0.aar/c65884279b0ade59ae92ddffdefeb885/AndroidManifest.xml:34:19-64
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:8:5-10:47
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:28:5-30:47
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:10:9-44
 	android:name
-		ADDED from [:react-native-maps] /home/miguel/Dev/kefflapp/node_modules/react-native-maps/lib/android/build/intermediates/manifests/full/debug/AndroidManifest.xml:10:22-78
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:9:9-63
+permission#com.kefflapp.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:8:5-10:47
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:28:5-30:47
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:28:5-30:47
+	android:protectionLevel
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:10:9-44
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:9:9-63
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:32:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:12:22-76
+uses-permission#com.kefflapp.permission.C2D_MESSAGE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:12:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:32:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:32:5-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:12:22-76
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:18:5-82
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:26:5-82
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:18:22-79
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:19:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:19:22-65
+uses-permission#android.permission.VIBRATE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:24:5-66
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:24:22-63
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:19:5-78
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:19:22-76
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:21:5-77
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:21:19-51
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-10.2.4.aar/714c11769fe576406cb0cefa532c4d47/AndroidManifest.xml:21:52-75
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.4.aar/4c9e4c73a91c253545f52d7fb4caab81/AndroidManifest.xml:19:9-172
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.4.aar/4c9e4c73a91c253545f52d7fb4caab81/AndroidManifest.xml:19:146-170
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.4.aar/4c9e4c73a91c253545f52d7fb4caab81/AndroidManifest.xml:19:86-145
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:25:22-76
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:30:5-81
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-10.2.4.aar/4c9e4c73a91c253545f52d7fb4caab81/AndroidManifest.xml:19:19-85
-uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
-uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-34:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
-meta-data#com.google.android.gms.version
-ADDED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/26abd94f8a133c1a626ada3eb6f535bb/AndroidManifest.xml:8:9-10:69
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.4.aar/83da3afb5570803075b27eaa8b802482/AndroidManifest.xml:20:9-121
-MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-10.2.4.aar/83da3afb5570803075b27eaa8b802482/AndroidManifest.xml:20:9-121
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:30:22-78
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:32:5-86
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:32:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:33:5-87
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:33:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:34:5-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:34:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:35:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:35:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:36:5-88
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:36:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:37:5-92
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:37:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:38:5-84
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:38:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:39:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:39:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:40:5-91
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:40:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:41:5-92
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:41:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:42:5-93
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:42:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:43:5-73
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:43:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:44:5-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:44:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:45:5-83
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:45:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:46:5-88
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:46:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:47:5-89
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:47:22-86
+meta-data#onesignal_app_id
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:50:9-52:51
 	android:value
-		ADDED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/26abd94f8a133c1a626ada3eb6f535bb/AndroidManifest.xml:10:13-66
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:52:13-48
 	android:name
-		ADDED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/26abd94f8a133c1a626ada3eb6f535bb/AndroidManifest.xml:9:13-58
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:51:13-44
+meta-data#onesignal_google_project_number
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:54:9-56:70
+	android:value
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:56:13-67
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:55:13-59
+receiver#com.onesignal.GcmBroadcastReceiver
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:58:9-68:20
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:60:13-73
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:59:13-62
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:${applicationId}
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:63:13-67:29
+	android:priority
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:63:28-50
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE+category:name:com.kefflapp
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:63:13-67:29
+	android:priority
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:63:28-50
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:64:17-81
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:64:25-78
+category#${applicationId}
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:66:17-61
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:66:27-58
+category#com.kefflapp
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:66:17-61
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:66:27-58
+receiver#com.onesignal.NotificationOpenedReceiver
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:69:9-77
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:69:19-74
+service#com.onesignal.GcmIntentService
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:71:9-66
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:71:18-63
+service#com.onesignal.GcmIntentJobService
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:72:9-74:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:74:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:73:13-61
+service#com.onesignal.RestoreJobService
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:75:9-77:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:77:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:76:13-59
+service#com.onesignal.RestoreKickoffJobService
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:78:9-80:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:80:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:79:13-66
+service#com.onesignal.SyncService
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:81:9-83:43
+	android:stopWithTask
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:83:13-40
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:82:13-53
+service#com.onesignal.SyncJobService
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:84:9-86:72
+	android:permission
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:86:13-69
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:85:13-56
+activity#com.onesignal.PermissionsActivity
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:88:9-90:75
+	android:theme
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:90:13-72
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:89:13-61
+service#com.onesignal.NotificationRestoreService
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:92:9-76
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:92:18-73
+receiver#com.onesignal.BootUpReceiver
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:94:9-100:20
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:94:19-62
+intent-filter#action:name:android.intent.action.ACTION_BOOT_COMPLETED+action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:95:13-99:29
+action#android.intent.action.ACTION_BOOT_COMPLETED
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:96:17-86
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:96:25-83
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:97:17-79
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:97:25-76
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:98:17-82
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:98:25-79
+receiver#com.onesignal.UpgradeReceiver
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:101:9-105:20
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:101:19-63
+intent-filter#action:name:android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:102:13-104:29
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:103:17-84
+	android:name
+		ADDED from [com.onesignal:OneSignal:3.9.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/AndroidManifest.xml:103:25-81
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:29:13-82
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:31:13-33:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:31:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:32:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:15.0.2] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-messaging-15.0.2.aar/b70158492e3c35e581f64c794c69b7a3/AndroidManifest.xml:32:25-75
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-maps-15.0.1.aar/5072d7094d32d082b6595c31efcf2f12/AndroidManifest.xml:28:9-32
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:35:9-39:19
+MERGED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:35:9-39:19
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:27:18-89
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-16.0.1.aar/f680d65801cfbc1035cf1749eefbd28b/AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.1.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.1.1.aar/0db5050480982c3b9a22f7dc766e79c0/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.1.aar/abea827281131a66aa19471716fc48ad/AndroidManifest.xml:49:13-87
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:36:13-38:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:38:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:37:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:41:9-50:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:43:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:44:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:42:13-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:56:9-62:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:58:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:57:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:59:13-61:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:59:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:60:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-iid-16.0.0.aar/923d9f87ca418d74665d0706ecb5348e/AndroidManifest.xml:60:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/765bd040322ffee14167fbbd0ebaf97b/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/765bd040322ffee14167fbbd0ebaf97b/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/765bd040322ffee14167fbbd0ebaf97b/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/765bd040322ffee14167fbbd0ebaf97b/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/edf95f231bb1d608ded85d32ad686165/AndroidManifest.xml:9:9-13:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/edf95f231bb1d608ded85d32ad686165/AndroidManifest.xml:11:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/edf95f231bb1d608ded85d32ad686165/AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/edf95f231bb1d608ded85d32ad686165/AndroidManifest.xml:13:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/edf95f231bb1d608ded85d32ad686165/AndroidManifest.xml:10:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e144c08b266a429f7f086e93ec58e267/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/ca04bcf64b8fbdac89cec52f6ed82fe7/AndroidManifest.xml:8:9-10:69
+MERGED from [com.google.maps.android:android-maps-utils:0.5] /home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/ca04bcf64b8fbdac89cec52f6ed82fe7/AndroidManifest.xml:8:9-10:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e144c08b266a429f7f086e93ec58e267/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:15.0.1] /home/miguel/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/e144c08b266a429f7f086e93ec58e267/AndroidManifest.xml:24:13-58
 provider#com.facebook.marketing.internal.MarketingInitProvider
-ADDED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/7d7391e03b8b83a3cca9107ced39de0f/AndroidManifest.xml:29:9-32:40
+ADDED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/b8ae691983c84ed48277a879f604f999/AndroidManifest.xml:29:9-32:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/7d7391e03b8b83a3cca9107ced39de0f/AndroidManifest.xml:31:13-73
+		ADDED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/b8ae691983c84ed48277a879f604f999/AndroidManifest.xml:31:13-73
 	android:exported
-		ADDED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/7d7391e03b8b83a3cca9107ced39de0f/AndroidManifest.xml:32:13-37
+		ADDED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/b8ae691983c84ed48277a879f604f999/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/7d7391e03b8b83a3cca9107ced39de0f/AndroidManifest.xml:30:13-81
+		ADDED from [com.facebook.android:facebook-marketing:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-marketing-4.34.0.aar/b8ae691983c84ed48277a879f604f999/AndroidManifest.xml:30:13-81
 provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:39:9-42:40
+ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:39:9-42:40
 	android:authorities
-		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:41:13-72
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:41:13-72
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:42:13-37
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:40:13-70
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:40:13-70
 receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:44:9-50:20
+ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:44:9-50:20
 	android:exported
-		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:46:13-37
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:45:13-86
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:45:13-86
 intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:47:13-49:29
+ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:47:13-49:29
 action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:48:17-95
+ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:48:17-95
 	android:name
-		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/6153607278cc0ea313d94f00bf383351/AndroidManifest.xml:48:25-92
+		ADDED from [com.facebook.android:facebook-core:4.34.0] /home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-core-4.34.0.aar/13ce26a345c03869ad9ccfe3e361d0b0/AndroidManifest.xml:48:25-92
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /home/miguel/Dev/kefflapp/android/app/src/main/AndroidManifest.xml:1:1-39:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "84009117906",
+    "firebase_url": "https://kefflapp.firebaseio.com",
+    "project_id": "kefflapp",
+    "storage_bucket": "kefflapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84009117906:android:0f4689e0f41a6b52",
+        "android_client_info": {
+          "package_name": "com.kefflapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84009117906-mk0nl2hjp8vn2njn9db104bs2t560nl7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kefflapp",
+            "certificate_hash": "f9697022cb2dc099522daabd1d3cea1f6a087547"
+          }
+        },
+        {
+          "client_id": "84009117906-m8c2lak58kj0in6hc7sdkjf8jvng0t80.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtiQ_nX1OWBiaYrshvAIcvuwiBhrZra-s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "84009117906-m8c2lak58kj0in6hc7sdkjf8jvng0t80.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

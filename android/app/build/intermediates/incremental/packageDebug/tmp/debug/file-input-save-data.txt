@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Jun 27 00:36:08 CDT 2018
+#Sat Jun 30 01:11:03 CDT 2018
 17.baseType=DIRECTORY
 4.path=lib/x86/libyoga.so
 25.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
@@ -14,11 +14,11 @@
 14.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 16.set=NATIVE_RESOURCE
 count=29
-6.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/assets/debug
+6.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 13.path=lib/armeabi-v7a/libreactnativejni.so
 6.baseType=DIRECTORY
 2.set=NATIVE_RESOURCE
-5.path=lib/x86/libreactnativejni.so
+5.path=fonts/Ionicons.ttf
 26.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 8.baseType=DIRECTORY
 21.baseType=DIRECTORY
@@ -34,7 +34,7 @@ count=29
 7.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 14.path=lib/armeabi-v7a/libjsc.so
 15.set=NATIVE_RESOURCE
-6.path=fonts/Ionicons.ttf
+6.path=lib/x86/libreactnativejni.so
 27.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 23.baseType=DIRECTORY
 1.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
@@ -45,7 +45,7 @@ count=29
 21.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 20.set=NATIVE_RESOURCE
 12.baseType=DIRECTORY
-6.set=ASSET
+6.set=NATIVE_RESOURCE
 27.baseType=DIRECTORY
 20.path=lib/x86/libprivatedata.so
 16.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
@@ -69,7 +69,7 @@ count=29
 1.baseType=DIRECTORY
 21.path=lib/x86_64/libimagepipeline.so
 3.baseType=DIRECTORY
-5.set=NATIVE_RESOURCE
+5.set=ASSET
 9.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
 16.path=lib/x86/libimagepipeline.so
 18.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
@@ -115,5 +115,5 @@ count=29
 19.path=classes.dex
 15.baseType=DIRECTORY
 3.set=NATIVE_RESOURCE
-5.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
+5.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/assets/debug
 12.path=lib/x86/libgnustl_shared.so
