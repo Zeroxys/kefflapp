@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {} from 'react-native';
 import SplashScreen from 'react-native-splash-screen'
 import {LoginManager, AccessToken} from 'react-native-fbsdk'
+import OneSignal from 'react-native-onesignal'
 
 import AuthScreen from './containers/AuthScreen/index'
 import HomeScreen from './containers/HomeScreen/index'
@@ -87,6 +88,35 @@ class App extends Component {
     }, 1000)
 
   }
+
+  componentWillMount() {
+    OneSignal.init("f2334502-2b91-4bdd-bcee-5a948515c958");
+
+    OneSignal.addEventListener('received', this.onReceived);
+    OneSignal.addEventListener('opened', this.onOpened);
+    OneSignal.addEventListener('ids', this.onIds);
+  }
+
+  componentWillUnmount() {
+    OneSignal.removeEventListener('received', this.onReceived);
+    OneSignal.removeEventListener('opened', this.onOpened);
+    OneSignal.removeEventListener('ids', this.onIds);
+}
+
+onReceived(notification) {
+  console.log("Notification received: ", notification);
+}
+
+onOpened(openResult) {
+console.log('Message: ', openResult.notification.payload.body);
+console.log('Data: ', openResult.notification.payload.additionalData);
+console.log('isActive: ', openResult.notification.isAppInFocus);
+console.log('openResult: ', openResult);
+}
+
+onIds(device) {
+console.log('Device info: ', device);
+}
 
   componentDidMount () {
     setTimeout( () => {
