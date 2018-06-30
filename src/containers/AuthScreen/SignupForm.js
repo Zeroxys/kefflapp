@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 import {StyleSheet, Dimensions, TouchableOpacity} from 'react-native'
 import {View, Text} from 'react-native-animatable'
 import t from 'tcomb-form-native'
-import Icon from 'react-native-vector-icons/Ionicons'
 
 import ButtonRegister from '../../components/UI/Button'
 import {UserSignupModel, options} from '../../utils/SignupModel'
+import axios from 'axios'
 
 const {width, height} = Dimensions.get('window')
 const Form = t.form.Form
@@ -15,7 +15,15 @@ class SignupForm extends Component {
   _onPress = ()  => {
     var value = this.refs.form.getValue();
     if (value) {
-      console.warn(value);
+      axios.post('http://159.65.186.61:8001/api/v1/customer', {
+        ...value
+      })
+      .then(function (response) {
+        console.warn(response);
+      })
+      .catch(function (error) {
+        console.warn(error);
+      })
     }
   }
 
