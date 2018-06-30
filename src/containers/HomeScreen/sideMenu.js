@@ -45,7 +45,7 @@ const style = StyleSheet.create({
 })
 
 
-const Menu = (props) => <View style={style.content}>
+export default Menu = <View style={style.content}>
         <View style={style.header}>
           <Image
             style={{width: 50, height: 50}}
@@ -84,5 +84,3 @@ const Menu = (props) => <View style={style.content}>
           </View>
         </View>
       </View>
-
-module.exports = Menu      

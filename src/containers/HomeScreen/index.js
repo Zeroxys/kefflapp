@@ -17,6 +17,7 @@ class HomeScreen extends Component {
         latitudeDelta : 0.0122,
         longitudeDelta : width / height * 0.0122
       },
+      sideBarIsOpen : false,
       expand : true,
       marker : false,
       visible : false,
@@ -64,7 +65,6 @@ class HomeScreen extends Component {
   }
 
   locationHandler = event => {
-    console.warn('location handler...')
     let coords = event.nativeEvent.coordinate
 
     this.map.animateToRegion({
@@ -90,9 +90,8 @@ class HomeScreen extends Component {
   }
 
   render () {
-    console.warn(this.props)
     return (
-      <SideMenu menu={Menu}>
+      <SideMenu menu={Menu} isOpen={this.state.sideBarIsOpen}>
         <MapContent
           marker = {this.state.marker}
           initialRegion = {this.state.currentLocation}
