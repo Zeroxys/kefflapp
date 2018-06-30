@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import {View,Text, StyleSheet, TouchableOpacity, Dimensions} from 'react-native'
-import Icon from 'react-native-vector-icons/Ionicons'
 
 import Collapsible from 'react-native-collapsible'
 import InfoContent from './InfoContent'
@@ -30,7 +29,7 @@ const styles = StyleSheet.create({
     width : '100%',
     justifyContent : 'center',
     alignItems : 'center',
-    height: 200
+    height: 230
   }
 })
 

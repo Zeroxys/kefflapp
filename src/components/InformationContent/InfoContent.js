@@ -15,20 +15,28 @@ const InfoContent = props => {
   return (
     <View style={styles.generalContent}>
       <View>
-        
+
         <ProductButton
-          name="Kilos"
+          name="Cantidad"
           iconName="ios-flame"
           showOptions = {props.showOptions}
-          messageInput="Introduce los Kilos"
+          messageInput="Introduce la cantidad"
           showTextInputPrice={props.showTextInputPrice} 
           showInputPrice={props.showInputPrice}/>
 
         <ProductButton
-          name="Cantidad"
+          name="Litros"
+          iconName="ios-flame"
+          showOptions = {props.showOptions}
+          messageInput="Introduce los Litros"
+          showTextInputPrice={props.showTextInputPrice} 
+          showInputPrice={props.showInputPrice}/>
+
+        <ProductButton
+          name="Kilos"
           iconName="md-flask"
           showOptions = {props.showOptions}
-          messageInput="Introduce el Monto"
+          messageInput="Introduce los Kilos"
           showTextInputPrice={props.showTextInputPrice} 
           showInputPrice={props.showInputPrice}/>
 
