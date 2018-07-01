@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {} from 'react-native';
+import {AsyncStorage} from 'react-native';
 import SplashScreen from 'react-native-splash-screen'
 import {LoginManager, AccessToken} from 'react-native-fbsdk'
 import OneSignal from 'react-native-onesignal'
@@ -16,11 +16,21 @@ class App extends Component {
       openSideBar :  false,
       isLoggedIn : false,
       isLoading : false,
-      isAppReady : false     
+      isAppReady : false,
+      facebookManager : null     
     }
 
     this._isOpenSideBar = this._isOpenSideBar.bind(this)
     this._facebookLoginManager = this._facebookLoginManager.bind(this)
+  }
+
+
+  _saveProfile = async (res) => {
+    try {
+      await AsyncStorage.setItem('@MySuperStore:key', JSON.stringify(res.data))
+    }catch (error) {
+      console.warn('error' + error)
+    }
   }
 
   _isOpenSideBar = () => {
@@ -35,22 +45,51 @@ class App extends Component {
   _facebookLoginManager = () => {
     LoginManager.logInWithReadPermissions(['public_profile']).then( res => {
         if(res) {          
-          
-          this.setState( prevState => {
-            return {
-              isAppReady : prevState.isAppReady = true
-            }
+          AccessToken.getCurrentAccessToken().then( res => {
+            axios.get(`https://graph.facebook.com/v3.0/me?fields=id,name,picture&access_token=${res.accessToken}`).then( res => {
+            
+              this._saveProfile(res)
+              this.setState(prevState => {
+                return {
+                  facebookManager : prevState.facebookManager = {...res.data},
+                  isLoggedIn : prevState.isLoggedIn = true
+                } 
+              })
+                                 
+            }).catch (err => {
+              this.setState( prevState => {
+                return {
+                  isLoggedIn : prevState.isLoggedIn = false
+                }
+              })
+            })
+
+
+          }).catch( err => {
+            alert('error al generar el token')
+            this.setState( prevState => {
+              return {
+                isLoggedIn : prevState.isLoggedIn = false
+              }
+            })
           })
         }else {
           alert('login cancelled')
+          this.setState( prevState => {
+            return {
+              isLoggedIn : prevState.isLoggedIn = false
+            }
+          })
         }
       }
-    ).catch( (err) => {
-      this.setState( prevState => {
-        return {
-          isAppReady : prevState.isAppReady = true
-        }
-      })
+    ).catch( err => {
+      if(err) {
+        this.setState( prevState => {
+          return {
+            isLoggedIn : prevState.isLoggedIn = false
+          }
+        })
+      }
     })
   }
 
@@ -128,18 +167,6 @@ class App extends Component {
       })
     }
 
-    /*console.warn(value)
-    this.setState( (prevState) => {
-      isLoading : this.prevState.isLoading = true
-    })
-
-    setTimeout( () => {
-      this.setState( (prevState) => {
-        isLoading : this.prevState.isLoading = false
-        isLoggedIn : this.prevState.isLoggedIn = true
-      })
-    }, 1000)*/
-
   }
 
   componentWillMount() {
@@ -199,6 +226,5 @@ console.log('Device info: ', device);
     return Screen
   }
 }
-
 
 export default App

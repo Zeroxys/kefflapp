@@ -5,28 +5,12 @@ import t from 'tcomb-form-native'
 
 import ButtonRegister from '../../components/UI/Button'
 import {UserSignupModel, options} from '../../utils/SignupModel'
-import axios from 'axios'
 
 const {width, height} = Dimensions.get('window')
 const Form = t.form.Form
 
 class SignupForm extends Component {
   
-  _onPress = ()  => {
-    var value = this.refs.form.getValue();
-    if (value) {
-      axios.post('http://159.65.186.61:8001/api/v1/customer', {
-        ...value
-      })
-      .then(function (response) {
-        console.warn(response);
-      })
-      .catch(function (error) {
-        console.warn(error);
-      })
-    }
-  }
-
   render () {
     return (
       <View style={styles.container}
