@@ -8,12 +8,12 @@
         "source": "/home/miguel/Dev/kefflapp/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
-    },
-    {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xxhdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable_abc_dialog_material_background.xml.flat",
@@ -48,16 +48,16 @@
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/7436931da2efb08fd93251146b4f482b/res/layout/notification_template_big_media.xml"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/layout_abc_search_view.xml.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/layout/abc_search_view.xml"
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xxhdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xhdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/layout_abc_search_view.xml.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/layout/abc_search_view.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
@@ -132,12 +132,12 @@
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/android-maps-utils-0.5.aar/ca04bcf64b8fbdac89cec52f6ed82fe7/res/layout/amu_info_window.xml"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xhdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_messenger_button_send_round_shadow.png.flat",
@@ -176,20 +176,20 @@
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
-    },
-    {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xhdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
@@ -204,20 +204,20 @@
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/cc3c87d361d5b575ad57181c75cdcd11/res/drawable-mdpi-v4/com_facebook_tooltip_blue_xout.png"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/cc3c87d361d5b575ad57181c75cdcd11/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
-    },
-    {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_com_facebook_tooltip_blue_bottomnub.png.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-login-4.34.0.aar/cc3c87d361d5b575ad57181c75cdcd11/res/drawable-mdpi-v4/com_facebook_tooltip_blue_bottomnub.png"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_left_mtrl_light.png.flat",
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-xxxhdpi-v4/abc_text_select_handle_left_mtrl_light.png"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable-mdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/anim_abc_slide_out_top.xml.flat",
@@ -236,12 +236,12 @@
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/aa5a99a1ec35821df0b512e9a9f0fa22/res/layout/messenger_button_send_blue_large.xml"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/layout_notification_template_icon_group.xml.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/03693580ea085f0d5488438ebc8834ed/res/layout/notification_template_icon_group.xml"
-    },
-    {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/layout_dev_loading_view.xml.flat",
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/1f0a3355fe6d716baa6d9f8a5e978492/res/layout/dev_loading_view.xml"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/layout_notification_template_icon_group.xml.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/03693580ea085f0d5488438ebc8834ed/res/layout/notification_template_icon_group.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/color_abc_tint_spinner.xml.flat",
@@ -264,12 +264,12 @@
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/facebook-messenger-4.34.0.aar/aa5a99a1ec35821df0b512e9a9f0fa22/res/drawable-xhdpi-v4/messenger_button_send_round_shadow.png"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/raw_consumer_onesignal_keep.xml.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/res/raw/consumer_onesignal_keep.xml"
-    },
-    {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/raw_consumer_onesignal_keep.xml.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.1.aar/eda4ce9822ef9fc2b79ef045f755a5e3/res/raw/consumer_onesignal_keep.xml"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/color_common_google_signin_btn_text_light.xml.flat",
@@ -280,12 +280,12 @@
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/color/abc_primary_text_disable_only_material_light.xml"
     },
     {
-        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/03693580ea085f0d5488438ebc8834ed/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
-    },
-    {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/color_abc_btn_colored_text_material.xml.flat",
         "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/3bfd879bba76f489fec6bc10bc58630d/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "/home/miguel/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/03693580ea085f0d5488438ebc8834ed/res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
         "merged": "/home/miguel/Dev/kefflapp/android/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",

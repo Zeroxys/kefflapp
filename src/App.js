@@ -3,6 +3,7 @@ import {} from 'react-native';
 import SplashScreen from 'react-native-splash-screen'
 import {LoginManager, AccessToken} from 'react-native-fbsdk'
 import OneSignal from 'react-native-onesignal'
+import axios from 'axios'
 
 import AuthScreen from './containers/AuthScreen/index'
 import HomeScreen from './containers/HomeScreen/index'
@@ -55,22 +56,38 @@ class App extends Component {
 
 
   //Simulate what the user is Login
-  _Login = (username, password) => {
-    this.setState( prevState => {
-      return {
-        isLoading : !prevState.isLoading
-      }
-    })
-
-    setTimeout( () => {
+  _Login = (value) => {
+    if(value) {
       this.setState( prevState => {
-
         return {
-          isLoading : prevState.isLoading = false,
-          isLoggedIn : prevState.isLoggedIn = true
+          isLoading : !prevState.isLoading
         }
       })
-    }, 2500)
+      axios.post('http://159.65.186.61:8001/api/v1/customer/login', {
+        ...value
+      })
+      .then( res => {
+        if(res){
+          this.setState( prevState => {
+
+            return {
+              isLoading : prevState.isLoading = false,
+              isLoggedIn : prevState.isLoggedIn = true
+            }
+          })
+        }
+      })
+      .catch( error => {        
+        if(error){
+          this.setState( prevState => {
+            return {
+              isLoading : prevState.isLoading = false
+            }
+          })
+        }
+      })
+    }
+
   }
 
   //Simulate what the user is SignUp

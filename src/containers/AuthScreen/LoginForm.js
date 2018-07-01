@@ -14,26 +14,10 @@ class LoginForm extends Component {
 
   constructor(props) {
     super(props)
-  }
-
-  _onPress = ()  => {
-    var value = this.refs.form.getValue()
-    if (value) {
-      axios.post('http://159.65.186.61:8001/api/v1/customer/login', {
-        ...value
-      })
-      .then(function (response) {
-        console.warn(response);
-      })
-      .catch(function (error) {
-        console.warn(error);
-      })
-    }
+    console.warn(this.props)
   }
 
   render () {
-
-    let state = this.props.isLoading
 
     return(<View
         animation={'fadeInUp'}
@@ -49,8 +33,7 @@ class LoginForm extends Component {
             <ButtonRegister
               color='#5A8DFE'
               name="INICIAR SESIÓN"
-              onPress={this._onPress}
-              Login={this.props.Login}
+              Login={() => this.props.Login(this.refs.form.getValue())}
               isLoading={this.props.isLoading}/>
 
             <TouchableOpacity onPress={() => this.props.onLinkPress()}>
