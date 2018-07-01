@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 
 // tcomb model user
 const LoginUser = t.struct({
-  user :t.String,
+  email :t.String,
   password : t.String
 })
 
@@ -12,12 +12,12 @@ const LoginUser = t.struct({
 const options = {
   auto : 'placeholders',
   fields : {
-    user : {
-      placeholder : 'USUARIO',
+    email: {
+      placeholder : 'CORREO ELECTRONICO',
       error : <Icon name="md-alert" size={19} color="#e53935"/>
     },
 
-    password : {
+    password: {
       placeholder : 'CONTRASEÑA',
       password : true,
       secureTextEntry: true,
