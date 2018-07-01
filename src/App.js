@@ -93,8 +93,42 @@ class App extends Component {
   }
 
   //Simulate what the user is SignUp
-  _SignUp = (username, password, fullName) => {
-    
+  _SignUp = (value) => {
+
+    if(value) {
+      this.setState( prevState => {
+        return {
+          isLoading : !prevState.isLoading
+        }
+      })
+      axios.post('http://159.65.186.61:8001/api/v1/customer', {
+        ...value
+      })
+      .then( res => {
+        if(res){
+          this.setState( prevState => {
+
+            return {
+              isLoading : prevState.isLoading = false,
+            }
+          })
+        }
+        alert('Usuario Registrado con exito')
+      })
+      .catch( error => {        
+        if(error){
+          this.setState( prevState => {
+            return {
+              isLoading : prevState.isLoading = false
+            }
+          })
+
+          alert('Error en el servidor')
+        }
+      })
+    }
+
+    /*console.warn(value)
     this.setState( (prevState) => {
       isLoading : this.prevState.isLoading = true
     })
@@ -104,7 +138,7 @@ class App extends Component {
         isLoading : this.prevState.isLoading = false
         isLoggedIn : this.prevState.isLoggedIn = true
       })
-    }, 1000)
+    }, 1000)*/
 
   }
 

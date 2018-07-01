@@ -42,7 +42,8 @@ class SignupForm extends Component {
         <ButtonRegister
             color='#5A8DFE'
             name="REGISTRATE"
-            onPress={this._onPress}/>  
+            Login={() => this.props.Signup(this.refs.form.getValue())}
+            isLoading={this.props.isLoading}/>  
 
         <TouchableOpacity onPress={() => this.props.onLinkPress()}>
           <Text 

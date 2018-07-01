@@ -69,6 +69,8 @@ class AuthScreen extends Component {
     //Redirect to SignUp Form
     if(this.state.visibleForm === 'SIGNUP') {
       Forms =  <SignupForm
+        Signup = {this.props.Signup}
+        isLoading={this.props.isLoading}
         onCreateAccountPress={() => this._setVisibleForm('SIGNUP')}
         onLinkPress={() => this._setVisibleForm('LOGIN')}/>
     }
