@@ -84,6 +84,8 @@ class App extends Component {
               isLoading : prevState.isLoading = false
             }
           })
+
+          alert('El correo electronico no existe')
         }
       })
     }
