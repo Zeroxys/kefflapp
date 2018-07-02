@@ -102,6 +102,7 @@ class HomeScreen extends Component {
           openModal = {this.openModal}
           getCurrentPosition = {this.getCurrentPosition}
           showOptions = {this.showOptions}
+          onSideBarOpen = {this._onSideBarOpen}
 
           showTextInputPrice = {this.showTextInputPrice}
           showInputPrice = {this.state.showInputPrice}/>
