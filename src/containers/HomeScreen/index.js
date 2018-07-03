@@ -27,6 +27,26 @@ class HomeScreen extends Component {
     this.locationHandler = this.locationHandler.bind(this)
   }
  
+  // watcher que vigilara la posicion actual
+  // y cambiara el marker
+  /*_getWatchPosition = () => {
+    let watchId = navigator.geolocation.watchPosition( pos => {
+      let lat = pos.coords.latitude
+      let long = pos.coords.longitude
+
+      let lastRegion = {
+        nativeEvent : {
+          coordinate : {
+            latitude : pos.coords.latitude,
+            longitude :  pos.coords.longitude
+          }
+        }
+      }
+      this.locationHandler(lastRegion)      
+    })
+  }*/
+
+
   showTextInputPrice = () => {
     this.setState( (prevState) => {
       return {
@@ -62,6 +82,8 @@ class HomeScreen extends Component {
     }, error_handler => {
       if(error_handler) alert('get current position failed')
     })
+
+    //this._getWatchPosition()
   }
 
   locationHandler = event => {

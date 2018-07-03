@@ -63,7 +63,23 @@ export default Menu = <View style={style.content}>
         <View style={style.mainContent}>
           <View style={style.block}>
             <Text>
-              Ruta
+              Perfil
+            </Text>
+
+            <Text>
+              Mis Pedidos
+            </Text>
+
+            <Text>
+              Pago
+            </Text>
+
+            <Text>
+              Factura
+            </Text>
+
+            <Text>
+              Acerca de la Aplicación
             </Text>
 
             <Text>
@@ -76,10 +92,6 @@ export default Menu = <View style={style.content}>
 
             <Text>
               Legal
-            </Text>
-
-            <Text>
-              Cerrar Sesion
             </Text>
           </View>
         </View>
