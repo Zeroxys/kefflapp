@@ -1,16 +1,11 @@
-import React, {Component} from 'react'
-import {View,Text, StyleSheet, TouchableOpacity, Dimensions} from 'react-native'
-import Icon from 'react-native-vector-icons/Ionicons'
-import Collapsible from 'react-native-collapsible'
+import React from 'react'
+import {View, StyleSheet} from 'react-native'
 
 //import info
 import ProductButton from './ProductButton'
 import SuccessButton from '../UI/SuccessButton'
 
-const {width, height} = Dimensions.get('window')
-
-const InfoContent = props => {
-  
+const InfoContent = props => { 
 
   return (
     <View style={styles.generalContent}>
@@ -20,6 +15,7 @@ const InfoContent = props => {
           name="Cantidad"
           iconName="ios-flame"
           showOptions = {props.showOptions}
+          placeholderInput = 'Introduce la cantidad'
           messageInput="Introduce la cantidad"
           showTextInputPrice={props.showTextInputPrice} 
           showInputPrice={props.showInputPrice}/>
@@ -28,6 +24,7 @@ const InfoContent = props => {
           name="Litros"
           iconName="ios-flame"
           showOptions = {props.showOptions}
+          placeholderInput = 'Introduce los litros'
           messageInput="Introduce los Litros"
           showTextInputPrice={props.showTextInputPrice} 
           showInputPrice={props.showInputPrice}/>
@@ -36,12 +33,13 @@ const InfoContent = props => {
           name="Kilos"
           iconName="md-flask"
           showOptions = {props.showOptions}
+          placeholderInput = 'Introduce lo kilos'
           messageInput="Introduce los Kilos"
           showTextInputPrice={props.showTextInputPrice} 
           showInputPrice={props.showInputPrice}/>
 
         </View>
-      <SuccessButton title={'Comprar'}/>
+      <SuccessButton onPurchase={props.onPurchase} title={'Comprar'}/>
     </View>
   )
 }

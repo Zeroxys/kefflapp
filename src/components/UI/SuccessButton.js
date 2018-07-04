@@ -6,7 +6,7 @@ const SuccessButton = (props) => {
     <TouchableOpacity
       style={styles.success}
       title={props.title} 
-      onPress={props.onPress}>  
+      onPress={() => props.onPurchase()}>  
       <Text style={{color : 'white'}}>{props.title}</Text>
     </TouchableOpacity> 
   )

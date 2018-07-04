@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, TouchableOpacity, TextInput} from 'react-native'
+import { Slider,StyleSheet, TouchableOpacity, TextInput} from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 import Collapsible from 'react-native-collapsible'
 import {View, Text} from 'react-native-animatable'
@@ -9,14 +9,16 @@ const Info = props => {
   let priceInput = null
 
   if(props.showInputPrice) {
-    priceInput = (<View animation="fadeInRight">
-      <TextInput style={styles.input} value={"introduce el precio"}></TextInput>
+    priceInput = (<View style={styles.messageInput} animation="fadeInRight">
+        <TextInput style={styles.input} placeholder={props.placeholderInput}></TextInput>
       </View>)
   } else {
-    priceInput = <Text animation="fadeInRight">12</Text>
+    priceInput = ( <View style={styles.messageInput} >
+      <Text
+        animation="fadeInRight">{props.messageInput}</Text>
+      </View>
+    )
   }
-
-  console.warn(props.showInputPrice)
 
   return (
     <View style={styles.content}>
@@ -24,14 +26,17 @@ const Info = props => {
       <View style={styles.generalContent}>
         <View style={styles.container}>
           
+          {/*Color y tipo de icono*/}
           <TouchableOpacity style={styles.iconContent}>
             <Icon name={props.iconName} size={22} color="#ffffff"/>
           </TouchableOpacity>
 
+          {/*Introducimos la entrada*/}
           <View style={{width : 60, alignItems:'center'}}>
             {priceInput}
           </View>
 
+          {/*Agregamos la cantidad que deseamos*/}
           <TouchableOpacity onPress={props.showTextInputPrice}>
             <Icon name="md-add" size={22}/>
           </TouchableOpacity>
@@ -93,9 +98,22 @@ const styles = StyleSheet.create({
     backgroundColor : '#4285F4'
   },
 
+  messageInput:{
+    display : 'flex',
+    justifyContent : 'center',
+    alignItems : 'center',
+    width : 180
+  },
+
+  inputPrice : {
+    display : 'flex',
+    justifyContent : 'center',
+    alignItems : 'center',
+    textAlign : 'center',
+  },
+
   input : {
-    backgroundColor : 'white',
-    width : 60
+    width : 140
   }
 })
 

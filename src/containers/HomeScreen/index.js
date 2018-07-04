@@ -2,10 +2,12 @@ import React, {Component} from 'react'
 import SideMenu from 'react-native-side-menu'
 import Menu from './sideMenu.js'
 import {Dimensions} from 'react-native'
+import OpenSocket from 'socket.io-client'
 
 import MapContent from '../../components/Map/MapContent'
 
 const {width, height} = Dimensions.get('window')
+const socket = OpenSocket('http://159.65.186.61:8001')
 
 class HomeScreen extends Component {
   constructor (props) {
@@ -25,8 +27,13 @@ class HomeScreen extends Component {
     }
 
     this.locationHandler = this.locationHandler.bind(this)
+    this.onPurchase = this.onPurchase.bind(this)
   }
  
+  onPurchase = () => {
+    console.warn('item adquirido')
+  }
+
   // watcher que vigilara la posicion actual
   // y cambiara el marker
   /*_getWatchPosition = () => {
@@ -109,6 +116,8 @@ class HomeScreen extends Component {
 
   componentDidMount () {
     this.getCurrentPosition()
+
+    var params = this.getCurrentPosition()
   }
 
   render () {
@@ -121,7 +130,7 @@ class HomeScreen extends Component {
           Ref = {ref => this.map = ref}
           toggle = {this.toggle}
           expand = {this.state.expand}
-          openModal = {this.openModal}
+          onPurchase = {this.onPurchase}
           getCurrentPosition = {this.getCurrentPosition}
           showOptions = {this.showOptions}
           onSideBarOpen = {this._onSideBarOpen}
