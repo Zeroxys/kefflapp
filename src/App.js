@@ -25,9 +25,9 @@ class App extends Component {
   }
 
 
-  _saveProfile = async (res) => {
+  _saveProfile = async (id,res) => {
     try {
-      await AsyncStorage.setItem('@MySuperStore:key', JSON.stringify(res.data))
+      await AsyncStorage.setItem(id, JSON.stringify(res.data))
     }catch (error) {
       console.warn('error' + error)
     }
@@ -48,13 +48,13 @@ class App extends Component {
           AccessToken.getCurrentAccessToken().then( res => {
             axios.get(`https://graph.facebook.com/v3.0/me?fields=id,name,picture&access_token=${res.accessToken}`).then( res => {
             
-              this._saveProfile(res)
               this.setState(prevState => {
                 return {
                   facebookManager : prevState.facebookManager = {...res.data},
                   isLoggedIn : prevState.isLoggedIn = true
                 } 
               })
+              this._saveProfile('fb_token', res)
                                  
             }).catch (err => {
               this.setState( prevState => {
@@ -170,38 +170,22 @@ class App extends Component {
   }
 
   componentWillMount() {
-    OneSignal.init("f2334502-2b91-4bdd-bcee-5a948515c958");
-
-    //OneSignal.addEventListener('received', this.onReceived);
-    //OneSignal.addEventListener('opened', this.onOpened);
-    //OneSignal.addEventListener('ids', this.onIds);
+    OneSignal.init("f2334502-2b91-4bdd-bcee-5a948515c958")
+    AsyncStorage.getItem('fb_token').then(token => {     
+      if(token) {
+        this.setState( prevState => {
+          return {
+            isLoggedIn : prevState.isLoggedIn = true
+          }
+        })
+      }
+    }).catch( err => console.warn('error al traer token'))
   }
-
-  componentWillUnmount() {
-    //OneSignal.removeEventListener('received', this.onReceived);
-    //OneSignal.removeEventListener('opened', this.onOpened);
-    //OneSignal.removeEventListener('ids', this.onIds);
-}
-
-onReceived(notification) {
-  console.log("Notification received: ", notification);
-}
-
-/*onOpened(openResult) {
-console.log('Message: ', openResult.notification.payload.body);
-console.log('Data: ', openResult.notification.payload.additionalData);
-console.log('isActive: ', openResult.notification.isAppInFochttp://www.actitudfem.com/us);
-console.log('openResult: ', openResult);
-}
-
-onIds(device) {
-console.log('Device info: ', device);
-}*/
 
   componentDidMount () {
     setTimeout( () => {
       SplashScreen.hide()
-    },2500)
+    },2000)
   }
 
   render() {
