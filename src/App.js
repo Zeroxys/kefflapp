@@ -99,7 +99,7 @@ class App extends Component {
     if(value) {
       this.setState( prevState => {
         return {
-          isLoading : !prevState.isLoading
+          isLoading : prevState.isLoading = true
         }
       })
       axios.post('http://159.65.186.61:8001/api/v1/customer/login', {
@@ -107,8 +107,8 @@ class App extends Component {
       })
       .then( res => {
         if(res){
+          this._saveProfile('user_token', res)
           this.setState( prevState => {
-
             return {
               isLoading : prevState.isLoading = false,
               isLoggedIn : prevState.isLoggedIn = true
@@ -146,7 +146,6 @@ class App extends Component {
       .then( res => {
         if(res){
           this.setState( prevState => {
-
             return {
               isLoading : prevState.isLoading = false,
             }
@@ -169,17 +168,26 @@ class App extends Component {
 
   }
 
-  componentWillMount() {
-    OneSignal.init("f2334502-2b91-4bdd-bcee-5a948515c958")
-    AsyncStorage.getItem('fb_token').then(token => {     
-      if(token) {
-        this.setState( prevState => {
+  async checkUserLogin () {
+    try {
+      let fbUser  = await AsyncStorage.getItem('fb_token')
+      let mailUser = await AsyncStorage.getItem('user_token')
+
+      if( fbUser || mailUser) {
+        this.setState(prevState => {
           return {
             isLoggedIn : prevState.isLoggedIn = true
           }
         })
       }
-    }).catch( err => console.warn('error al traer token'))
+    } catch (error) {
+      console.warn('error al recibir la informacion')
+    } 
+  }
+
+  componentWillMount() {
+    OneSignal.init("f2334502-2b91-4bdd-bcee-5a948515c958")
+    this.checkUserLogin()
   }
 
   componentDidMount () {
