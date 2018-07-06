@@ -5,8 +5,7 @@ import MapView from './MapView'
 import PositionButton from '../PositionButton/PositionButton'
 import ArrowButton from '../ArrowButton/ArrowButton'
 import PriceBox from '../PriceBox/PriceBox'
-
-import InfoContent from '../../components/InformationContent'
+//import InfoContent from '../../components/InformationContent'
 
 const MapContent = props => {
   return (
@@ -17,12 +16,10 @@ const MapContent = props => {
         onPress={props.OnPress}
         Ref = {props.Ref}/>
       <PriceBox/>
-      <PositionButton
-        expand={props.expand} 
-        OnPress={props.getCurrentPosition}/>
+      <PositionButton onPress={props.getCurrentPosition} expand={props.expand}/>
       <ArrowButton 
         onPurchase={props.onPurchase}
-        expand={props.expand} 
+        expand={props.expand}
         OnPress={props.toggle} 
         Icon={props.expand}
         showTextInputPrice={props.showTextInputPrice} 

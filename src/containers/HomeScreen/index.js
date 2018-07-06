@@ -73,6 +73,7 @@ class HomeScreen extends Component {
   }
 
   getCurrentPosition = (event) => {
+    console.warn('click')
     navigator.geolocation.getCurrentPosition( pos => {
       
       const coordsEvent = {
@@ -83,13 +84,10 @@ class HomeScreen extends Component {
           }
         }
       }
-      
       this.locationHandler(coordsEvent)
-
     }, error_handler => {
       if(error_handler) alert('get current position failed')
     })
-
     //this._getWatchPosition()
   }
 
@@ -116,7 +114,6 @@ class HomeScreen extends Component {
 
   componentDidMount () {
     this.getCurrentPosition()
-
     var params = this.getCurrentPosition()
   }
 
@@ -131,7 +128,7 @@ class HomeScreen extends Component {
           toggle = {this.toggle}
           expand = {this.state.expand}
           onPurchase = {this.onPurchase}
-          getCurrentPosition = {this.getCurrentPosition}
+          getCurrentPosition={this.getCurrentPosition}
           showOptions = {this.showOptions}
           onSideBarOpen = {this._onSideBarOpen}
 

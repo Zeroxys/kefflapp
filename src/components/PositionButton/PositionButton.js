@@ -1,17 +1,18 @@
 import React from 'react'
-import {TouchableOpacity, StyleSheet, Dimensions} from 'react-native'
+import {TouchableOpacity, StyleSheet} from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 import {View} from 'react-native-animatable'
 
-const PositionButton = (props) => {
+const PositionButton = props => {
+  //console.warn(props.onPress)
   return (
-      <View animation={props.expand ? 'fadeInRight' : 'fadeOutRight'} style={styles.buttonContent} onPress={props.OnPress}>
-          <TouchableOpacity style={styles.iconContent}>
-            <View>
-              <Icon color= "#4285F4" size={28} name="md-locate"/>
-            </View>
-          </TouchableOpacity>
+    <TouchableOpacity onPress={props.onPress} style={styles.buttonContent}>
+      <View
+        style={styles.iconContent}
+        animation={props.expand ? 'fadeInRight' : 'fadeOutRight'} >
+          <Icon color= "#4285F4" size={28} name="md-locate"/>
       </View>
+    </TouchableOpacity>  
   )
 }
 
@@ -20,12 +21,12 @@ const styles = StyleSheet.create({
     position : 'absolute',
     bottom : '9%',
     right: '5%',
-    backgroundColor: 'white',
+    //backgroundColor: 'white',
     width : 50,
     height : 50,
     borderRadius : 100,
-    elevation : 5,
-    zIndex : 5,
+    //elevation : 5,
+    //Index : 5,
   },
 
   iconContent : {
