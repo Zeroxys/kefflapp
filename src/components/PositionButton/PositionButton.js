@@ -1,16 +1,17 @@
 import React from 'react'
-import {View, TouchableOpacity, StyleSheet, Dimensions} from 'react-native'
+import {TouchableOpacity, StyleSheet, Dimensions} from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
-
-const {width, height} = Dimensions.get('window')
+import {View} from 'react-native-animatable'
 
 const PositionButton = (props) => {
   return (
-    <TouchableOpacity style={styles.buttonContent} onPress={props.OnPress}>
-      <View style={styles.iconContent}>
-        <Icon color= "#4285F4" size={28} name="md-locate"/>
+      <View animation={props.expand ? 'fadeInRight' : 'fadeOutRight'} style={styles.buttonContent} onPress={props.OnPress}>
+          <TouchableOpacity style={styles.iconContent}>
+            <View>
+              <Icon color= "#4285F4" size={28} name="md-locate"/>
+            </View>
+          </TouchableOpacity>
       </View>
-    </TouchableOpacity>
   )
 }
 

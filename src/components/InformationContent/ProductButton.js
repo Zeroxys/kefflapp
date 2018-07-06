@@ -10,7 +10,10 @@ const Info = props => {
 
   if(props.showInputPrice) {
     priceInput = (<View style={styles.messageInput} animation="fadeInRight">
-        <TextInput style={styles.input} placeholder={props.placeholderInput}></TextInput>
+        <TextInput
+          keyboardType={'numeric'} 
+          style={styles.input} 
+          placeholder={props.placeholderInput}/>
       </View>)
   } else {
     priceInput = ( <View style={styles.messageInput} >
@@ -38,7 +41,9 @@ const Info = props => {
 
           {/*Agregamos la cantidad que deseamos*/}
           <TouchableOpacity onPress={props.showTextInputPrice}>
-            <Icon name="md-add" size={22}/>
+            <Icon 
+              name={props.showInputPrice ? "md-remove" : "md-add"} 
+              size={22}/>
           </TouchableOpacity>
 
         </View>
@@ -113,7 +118,7 @@ const styles = StyleSheet.create({
   },
 
   input : {
-    width : 140
+    width : 130
   }
 })
 
