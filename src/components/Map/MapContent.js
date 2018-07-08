@@ -8,6 +8,7 @@ import PriceBox from '../PriceBox/PriceBox'
 //import InfoContent from '../../components/InformationContent'
 
 const MapContent = props => {
+
   return (
     <View style={styles.mapContent}>
       <MapView

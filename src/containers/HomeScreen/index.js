@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import SideMenu from 'react-native-side-menu'
-import Menu from './sideMenu.js'
-import {Dimensions} from 'react-native'
+//import Menu from './sideMenu.js'
+import {Dimensions, StyleSheet, View, Text, Image, AsyncStorage} from 'react-native'
 import OpenSocket from 'socket.io-client'
 
 import MapContent from '../../components/Map/MapContent'
@@ -19,6 +19,8 @@ class HomeScreen extends Component {
         latitudeDelta : 0.0122,
         longitudeDelta : width / height * 0.0122
       },
+      userName : null,
+      userPicture : null,
       sideBarIsOpen : false,
       expand : true,
       marker : false,
@@ -53,7 +55,6 @@ class HomeScreen extends Component {
     })
   }*/
 
-
   showTextInputPrice = () => {
     this.setState( (prevState) => {
       return {
@@ -73,7 +74,6 @@ class HomeScreen extends Component {
   }
 
   getCurrentPosition = (event) => {
-    console.warn('click')
     navigator.geolocation.getCurrentPosition( pos => {
       
       const coordsEvent = {
@@ -112,12 +112,84 @@ class HomeScreen extends Component {
     })
   }
 
-  componentDidMount () {
-    this.getCurrentPosition()
-    var params = this.getCurrentPosition()
+  async getUserLogin () {
+    try {
+      let fbUser  = JSON.parse(await AsyncStorage.getItem('fb_token'))
+      //let fbUser  = await AsyncStorage.getItem('fb_token')
+      let mailUser = JSON.parse(await AsyncStorage.getItem('user_token'))
+
+      if( fbUser || mailUser) {
+        this.setState(prevState => {
+          return {
+            userName : prevState.userManager = fbUser.name,
+            userPicture : prevState.userPicture = fbUser.picture.data.url
+          }
+        })
+      }
+    } catch (error) {
+      console.warn(error)
+    } 
   }
 
+  componentDidMount () {
+    this.getCurrentPosition()
+    this.getUserLogin()
+  } 
+
   render () {
+    const Menu = (<View style={style.content}>
+                  <View style={style.header}>
+                    <Image
+                      style={{width: 50, height: 50}}
+                      source={ { uri: this.state.userPicture  } }
+                    />
+                    <View style={style.profileData}>
+                      <Text style={{color : 'white'}}>
+                        Bienvenido
+                      </Text>
+                      <Text style={{color : 'white'}}>
+                        {this.state.userName}
+                      </Text>
+                    </View>
+                  </View>
+                  <View style={style.mainContent}>
+                    <View style={style.block}>
+                      <Text>
+                        Perfil
+                      </Text>
+
+                      <Text>
+                        Mis Pedidos
+                      </Text>
+
+                      <Text>
+                        Pago
+                      </Text>
+
+                      <Text>
+                        Factura
+                      </Text>
+
+                      <Text>
+                        Acerca de la Aplicación
+                      </Text>
+
+                      <Text>
+                        Configuración
+                      </Text>
+
+                      <Text>
+                        Ayuda
+                      </Text>
+
+                      <Text>
+                        Legal
+                      </Text>
+                    </View>
+                  </View>
+                  </View>)
+
+
     return (
       <SideMenu menu={Menu} isOpen={this.state.sideBarIsOpen}>
         <MapContent
@@ -138,5 +210,48 @@ class HomeScreen extends Component {
     )
   }
 }
+
+const style = StyleSheet.create({
+  content : {
+    flex: 1,
+    backgroundColor : '#eeeeee',
+    display : 'flex',
+    flexDirection : 'column',
+    alignItems : 'center',
+  },
+
+  header : {
+    width : '100%',
+    height : '25%',
+    flexDirection : 'row',
+    display : 'flex',
+    backgroundColor : '#757575',
+    justifyContent : 'space-around',
+    alignItems : 'center',
+  },
+
+  profileData : {
+    marginRight : 30,
+    justifyContent : 'center',
+    display : 'flex',
+    alignItems : 'center'
+  },
+
+  block : {
+    height : '70%',
+    width : 200,
+    justifyContent : 'center',
+    justifyContent : 'space-around',
+  },
+
+  mainContent : {
+    flex: 1,
+    display : 'flex',
+    justifyContent : 'space-around',
+    alignItems : 'center',
+    flexDirection : 'column',
+    display : 'flex',
+  }
+})
 
 export default HomeScreen
