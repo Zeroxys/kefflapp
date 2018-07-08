@@ -20,7 +20,12 @@ const ArrowButton = props => {
         onPurchase={props.onPurchase}
         expand={props.expand}
         showTextInputPrice={props.showTextInputPrice} 
-        showInputPrice={props.showInputPrice}/>
+        showInputPrice={props.showInputPrice}
+        
+        inputQuantity = {props.inputQuantity}
+        inputLiters = {props.inputLiters}
+        inputKilos = {props.inputKilos}
+        />
 
       <TouchableOpacity style={styles.expandButton} onPress={props.OnPress}>
         <Icon name={arrowIcon} size={25} style={{top : 5}}/>

@@ -10,9 +10,9 @@ const PriceBox = (props) => {
   }
 
   return (
-    <View style={styles.mainContent} onPress={() => props.openSidebar}>
+    <View style={styles.mainContent}>
       {/*Bar menu icon*/}
-      <TouchableOpacity style={{height : 50}}>
+      <TouchableOpacity style={{height : 50}} onPress={() => props.onSideBarOpen()}>
         <Icon style={{marginRight: 300, top: 15}} color= "#424242" size={38} name="md-menu"/>
       </TouchableOpacity>
       

@@ -18,7 +18,10 @@ const InfoContent = props => {
           placeholderInput = 'Introduce la cantidad'
           messageInput="Introduce la cantidad"
           showTextInputPrice={props.showTextInputPrice} 
-          showInputPrice={props.showInputPrice}/>
+          showInputPrice={props.showInputPrice}
+          
+          inputQuantity = {props.inputQuantity}
+          />
 
         <ProductButton
           name="Litros"
@@ -27,7 +30,10 @@ const InfoContent = props => {
           placeholderInput = 'Introduce los litros'
           messageInput="Introduce los Litros"
           showTextInputPrice={props.showTextInputPrice} 
-          showInputPrice={props.showInputPrice}/>
+          showInputPrice={props.showInputPrice}
+          
+          inputLiters={props.inputLiters}
+          />
 
         <ProductButton
           name="Kilos"
@@ -36,7 +42,10 @@ const InfoContent = props => {
           placeholderInput = 'Introduce lo kilos'
           messageInput="Introduce los Kilos"
           showTextInputPrice={props.showTextInputPrice} 
-          showInputPrice={props.showInputPrice}/>
+          showInputPrice={props.showInputPrice}
+          
+          inputKilos = {props.inputKilos}
+          />
 
         </View>
       <SuccessButton onPurchase={props.onPurchase} title={'Comprar'}/>

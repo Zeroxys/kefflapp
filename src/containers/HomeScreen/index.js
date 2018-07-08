@@ -25,7 +25,11 @@ class HomeScreen extends Component {
       expand : true,
       marker : false,
       visible : false,
-      showInputPrice : false
+      showInputPrice : false,
+
+      inputQuantity : '',
+      inputLiters : '',
+      inputKilos : '',
     }
 
     this.locationHandler = this.locationHandler.bind(this)
@@ -73,6 +77,14 @@ class HomeScreen extends Component {
 
   }
 
+  _onSideBarOpen = () => {
+    this.setState( prevState => {
+      return {
+        sideBarIsOpen : !prevState.sideBarIsOpen
+      }
+    })
+  }
+
   getCurrentPosition = (event) => {
     navigator.geolocation.getCurrentPosition( pos => {
       
@@ -115,14 +127,22 @@ class HomeScreen extends Component {
   async getUserLogin () {
     try {
       let fbUser  = JSON.parse(await AsyncStorage.getItem('fb_token'))
-      //let fbUser  = await AsyncStorage.getItem('fb_token')
       let mailUser = JSON.parse(await AsyncStorage.getItem('user_token'))
 
-      if( fbUser || mailUser) {
+      console.warn(mailUser)
+
+      if( fbUser) {
         this.setState(prevState => {
           return {
             userName : prevState.userManager = fbUser.name,
             userPicture : prevState.userPicture = fbUser.picture.data.url
+          }
+        })
+      }if(mailUser){
+        this.setState(prevState => {
+          return {
+            userName : prevState.userManager = mailUser.data.loginResult.name,
+            userPicture : prevState.userPicture = 'http://clipground.com/images/profile-clipart-2.png'
           }
         })
       }
@@ -191,7 +211,18 @@ class HomeScreen extends Component {
 
 
     return (
-      <SideMenu menu={Menu} isOpen={this.state.sideBarIsOpen}>
+      <SideMenu 
+        menu={Menu} 
+        isOpen={this.state.sideBarIsOpen}
+        autoClosing={false}
+        disableGestures={true}
+        onChange={() => {
+          this.setState(prevState => {
+            return {
+              sideBarIsOpen : prevState.sideBarIsOpen = false
+            }
+          })
+        }}>
         <MapContent
           marker = {this.state.marker}
           initialRegion = {this.state.currentLocation}
@@ -205,7 +236,12 @@ class HomeScreen extends Component {
           onSideBarOpen = {this._onSideBarOpen}
 
           showTextInputPrice = {this.showTextInputPrice}
-          showInputPrice = {this.state.showInputPrice}/>
+          showInputPrice = {this.state.showInputPrice}
+          
+          inputQuantity = {this.state.inputQuantity}
+          inputLiters = {this.state.inputLiters}
+          inputKilos = {this.state.inputKilos}
+          />
       </SideMenu>
     )
   }

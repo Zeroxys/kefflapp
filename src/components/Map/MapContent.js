@@ -16,7 +16,7 @@ const MapContent = props => {
         initialRegion={props.initialRegion}
         onPress={props.OnPress}
         Ref = {props.Ref}/>
-      <PriceBox/>
+      <PriceBox onSideBarOpen={props.onSideBarOpen}/>
       <PositionButton onPress={props.getCurrentPosition} expand={props.expand}/>
       <ArrowButton 
         onPurchase={props.onPurchase}
@@ -24,7 +24,12 @@ const MapContent = props => {
         OnPress={props.toggle} 
         Icon={props.expand}
         showTextInputPrice={props.showTextInputPrice} 
-        showInputPrice={props.showInputPrice}/>
+        showInputPrice={props.showInputPrice}
+        
+        inputQuantity = {props.inputQuantity}
+        inputLiters = {props.inputLiters}
+        inputKilos = {props.inputKilos}
+        />
     </View>)
 }
 
