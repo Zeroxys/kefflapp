@@ -19,6 +19,7 @@ class HomeScreen extends Component {
         latitudeDelta : 0.0122,
         longitudeDelta : width / height * 0.0122
       },
+      
       userName : null,
       userPicture : null,
       sideBarIsOpen : false,

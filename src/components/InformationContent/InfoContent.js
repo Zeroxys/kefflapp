@@ -17,9 +17,9 @@ const InfoContent = props => {
           showOptions = {props.showOptions}
           placeholderInput = 'Introduce la cantidad'
           messageInput="Introduce la cantidad"
-          showTextInputPrice={props.showTextInputPrice} 
-          showInputPrice={props.showInputPrice}
-          
+
+          showTextInputPrice={props.showTextInputPrice}           
+          showInputPrice={props.showInputPrice}          
           inputQuantity = {props.inputQuantity}
           />
 
@@ -29,9 +29,9 @@ const InfoContent = props => {
           showOptions = {props.showOptions}
           placeholderInput = 'Introduce los litros'
           messageInput="Introduce los Litros"
+
           showTextInputPrice={props.showTextInputPrice} 
-          showInputPrice={props.showInputPrice}
-          
+          showInputPrice={props.showInputPrice}          
           inputLiters={props.inputLiters}
           />
 
@@ -41,9 +41,9 @@ const InfoContent = props => {
           showOptions = {props.showOptions}
           placeholderInput = 'Introduce lo kilos'
           messageInput="Introduce los Kilos"
+
           showTextInputPrice={props.showTextInputPrice} 
-          showInputPrice={props.showInputPrice}
-          
+          showInputPrice={props.showInputPrice}          
           inputKilos = {props.inputKilos}
           />
 
