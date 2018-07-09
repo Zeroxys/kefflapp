@@ -6,9 +6,18 @@ import {View, Text} from 'react-native-animatable'
 
 const ProductButton = props => {
 
-  let priceInput = null
+  let priceInput = (<TextInput
+    defaultValue={props.inputQuantity}
+    keyboardType={'numeric'} 
+    style={styles.input} 
+    placeholder={props.placeholderInput}
+    onChangeText={(text) => props.showTextInputPrice(text)}
+    editable={true}
+    onSubmitEditing={props.onPurchase}
+    maxLength={3}
+    enablesReturnKeyAutomatically={true}/>)
 
-  if(props.showInputPrice) {
+  /*if(props.showInputPrice) {
     priceInput = (<View style={styles.messageInput} animation="fadeInRight">
         <TextInput
           defaultValue={'.00'}
@@ -24,7 +33,7 @@ const ProductButton = props => {
         animation="fadeInRight">{props.messageInput}</Text>
       </View>
     )
-  }
+  }*/
 
   return (
     <View style={styles.content}>

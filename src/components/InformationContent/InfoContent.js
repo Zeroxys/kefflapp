@@ -22,6 +22,7 @@ const InfoContent = props => {
           //showInputPrice={props.inputQuantity}
           showInputPrice={props.showInputPrice}          
           inputQuantity = {props.inputQuantity}
+          onPurchase = {props.onPurchase}
           />
 
         <ProductButton

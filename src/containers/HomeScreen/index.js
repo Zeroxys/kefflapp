@@ -28,7 +28,7 @@ class HomeScreen extends Component {
       visible : false,
 
       showInputPrice : false, // <--- Muestra las tablas de input
-      inputQuantity : false,
+      inputQuantity : '',
       inputLiters : false,
       inputKilos : false,
     }
@@ -38,7 +38,7 @@ class HomeScreen extends Component {
   }
  
   onPurchase = () => {
-    console.warn('item adquirido')
+    console.warn(typeof this.state.inputQuantity)
   }
 
   // watcher que vigilara la posicion actual
@@ -60,14 +60,15 @@ class HomeScreen extends Component {
     })
   }*/
 
-  showTextInputPrice = () => {
+  showTextInputPrice = (e) => {
+    console.warn(e)
     //console.warn('pushpush')
-    /*this.setState( (prevState) => {
+    this.setState( (prevState) => {
       return {
-        showInputPrice : !prevState.showInputPrice
-          //inputKilos : !prevState.inputKilos
+        //showInputPrice : !prevState.showInputPrice
+        inputQuantity : prevState.inputQuantity = e.replace(/[^0-9]/g,'')
       }
-    })*/
+    })
   }
 
 
