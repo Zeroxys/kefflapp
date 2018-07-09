@@ -19,18 +19,18 @@ class HomeScreen extends Component {
         latitudeDelta : 0.0122,
         longitudeDelta : width / height * 0.0122
       },
-      
+
       userName : null,
       userPicture : null,
       sideBarIsOpen : false,
       expand : true,
       marker : false,
       visible : false,
-      showInputPrice : false,
 
-      inputQuantity : '',
-      inputLiters : '',
-      inputKilos : '',
+      showInputPrice : false, // <--- Muestra las tablas de input
+      inputQuantity : false,
+      inputLiters : false,
+      inputKilos : false,
     }
 
     this.locationHandler = this.locationHandler.bind(this)
@@ -61,11 +61,13 @@ class HomeScreen extends Component {
   }*/
 
   showTextInputPrice = () => {
-    this.setState( (prevState) => {
+    //console.warn('pushpush')
+    /*this.setState( (prevState) => {
       return {
         showInputPrice : !prevState.showInputPrice
+          //inputKilos : !prevState.inputKilos
       }
-    })
+    })*/
   }
 
 
@@ -130,7 +132,7 @@ class HomeScreen extends Component {
       let fbUser  = JSON.parse(await AsyncStorage.getItem('fb_token'))
       let mailUser = JSON.parse(await AsyncStorage.getItem('user_token'))
 
-      console.warn(mailUser)
+      //console.warn(mailUser)
 
       if( fbUser) {
         this.setState(prevState => {

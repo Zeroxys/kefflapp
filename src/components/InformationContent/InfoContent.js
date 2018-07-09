@@ -5,7 +5,7 @@ import {View, StyleSheet} from 'react-native'
 import ProductButton from './ProductButton'
 import SuccessButton from '../UI/SuccessButton'
 
-const InfoContent = props => { 
+const InfoContent = props => {
 
   return (
     <View style={styles.generalContent}>
@@ -15,10 +15,11 @@ const InfoContent = props => {
           name="Cantidad"
           iconName="ios-flame"
           showOptions = {props.showOptions}
-          placeholderInput = 'Introduce la cantidad'
-          messageInput="Introduce la cantidad"
+          placeholderInput = 'Cantidad'
+          messageInput="Cantidad"
 
           showTextInputPrice={props.showTextInputPrice}           
+          //showInputPrice={props.inputQuantity}
           showInputPrice={props.showInputPrice}          
           inputQuantity = {props.inputQuantity}
           />
@@ -27,10 +28,11 @@ const InfoContent = props => {
           name="Litros"
           iconName="ios-flame"
           showOptions = {props.showOptions}
-          placeholderInput = 'Introduce los litros'
-          messageInput="Introduce los Litros"
+          placeholderInput = 'Litros'
+          messageInput="Litros"
 
-          showTextInputPrice={props.showTextInputPrice} 
+          showTextInputPrice={props.showTextInputPrice}
+          //showInputPrice={props.inputLiters}
           showInputPrice={props.showInputPrice}          
           inputLiters={props.inputLiters}
           />
@@ -39,10 +41,11 @@ const InfoContent = props => {
           name="Kilos"
           iconName="md-flask"
           showOptions = {props.showOptions}
-          placeholderInput = 'Introduce lo kilos'
-          messageInput="Introduce los Kilos"
+          placeholderInput = 'Kilos'
+          messageInput="Kilos"
 
           showTextInputPrice={props.showTextInputPrice} 
+          //showInputPrice = {props.inputKilos}
           showInputPrice={props.showInputPrice}          
           inputKilos = {props.inputKilos}
           />

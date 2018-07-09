@@ -1,4 +1,4 @@
-#Sat Jul 07 23:24:35 CDT 2018
+#Mon Jul 09 12:25:36 CDT 2018
 base.0=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,19 +1,22 @@
 import React from 'react'
-import { Slider,StyleSheet, TouchableOpacity, TextInput} from 'react-native'
+import { StyleSheet, TouchableOpacity, TextInput} from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 import Collapsible from 'react-native-collapsible'
 import {View, Text} from 'react-native-animatable'
 
-const Info = props => {
+const ProductButton = props => {
 
   let priceInput = null
 
   if(props.showInputPrice) {
     priceInput = (<View style={styles.messageInput} animation="fadeInRight">
         <TextInput
+          defaultValue={'.00'}
           keyboardType={'numeric'} 
           style={styles.input} 
-          placeholder={props.placeholderInput}/>
+          placeholder={props.placeholderInput}
+          onChange={props.showTextInputPrice}
+          editable={true}/>
       </View>)
   } else {
     priceInput = ( <View style={styles.messageInput} >
@@ -36,13 +39,15 @@ const Info = props => {
 
           {/*Introducimos la entrada*/}
           <View style={{width : 60, alignItems:'center'}}>
+
             {priceInput}
+
           </View>
 
           {/*Agregamos la cantidad que deseamos*/}
           <TouchableOpacity onPress={props.showTextInputPrice}>
             <Icon 
-              name={props.showInputPrice ? "md-remove" : "md-add"} 
+              name={ props.showInputPrice ? "md-remove" : "md-add"/*props.showInputPrice ? "md-remove" : "md-add"*/} 
               size={22}/>
           </TouchableOpacity>
 
@@ -118,8 +123,11 @@ const styles = StyleSheet.create({
   },
 
   input : {
-    width : 130
+    width : 130,
+    paddingTop:0,
+    paddingBottom:0,
+    textAlign : 'center'
   }
 })
 
-export default Info
+export default ProductButton

@@ -11,6 +11,10 @@ const InfoBox = (props) => {
         <InfoContent
           onPurchase = {props.onPurchase} 
           expand={props.expand}
+
+          inputKilos = {props.inputKilos}
+          inputQuantity = {props.inputQuantity}
+          inputyLiters = {props.inputyLiters}
           showTextInputPrice={props.showTextInputPrice} 
           showInputPrice={props.showInputPrice}/>
       </Collapsible>      
