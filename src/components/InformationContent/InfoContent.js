@@ -4,7 +4,6 @@ import {View, StyleSheet} from 'react-native'
 //import info
 import ProductButton from './ProductButton'
 import SuccessButton from '../UI/SuccessButton'
-
 const InfoContent = props => {
 
   return (

@@ -1,11 +1,10 @@
 import React from 'react'
-import {StyleSheet, View} from 'react-native'
+import {StyleSheet, View, ActivityIndicator} from 'react-native'
 
 import MapView from './MapView'
 import PositionButton from '../PositionButton/PositionButton'
 import ArrowButton from '../ArrowButton/ArrowButton'
 import PriceBox from '../PriceBox/PriceBox'
-//import InfoContent from '../../components/InformationContent'
 
 const MapContent = props => {
 

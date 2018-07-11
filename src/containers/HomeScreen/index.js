@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import SideMenu from 'react-native-side-menu'
-//import Menu from './sideMenu.js'
 import {Dimensions, StyleSheet, View, Text, Image, AsyncStorage} from 'react-native'
 import OpenSocket from 'socket.io-client'
 
@@ -38,7 +37,12 @@ class HomeScreen extends Component {
   }
  
   onPurchase = () => {
-    console.warn(typeof this.state.inputQuantity)
+    console.warn(this.state.inputQuantity)
+    this.setState( prevState => {
+      return {
+        inputQuantity : prevState.inputQuantity = ''
+      }
+    })
   }
 
   // watcher que vigilara la posicion actual
@@ -61,7 +65,7 @@ class HomeScreen extends Component {
   }*/
 
   showTextInputPrice = (e) => {
-    console.warn(e)
+    //console.warn(e)
     //console.warn('pushpush')
     this.setState( (prevState) => {
       return {
@@ -158,6 +162,15 @@ class HomeScreen extends Component {
   componentDidMount () {
     this.getCurrentPosition()
     this.getUserLogin()
+
+    socket.on('connection')
+    socket.emit('createOrder', {
+      lat: '17.99740963',
+      lng: '-92.9406558',
+      quantity: '40',
+      idProducto: '5b3bfb3eaec2945dc9d17a90',
+      idCostumer: '5b440136aec2945dc9d17a92',
+    } )
   } 
 
   render () {
