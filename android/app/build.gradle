@@ -28,7 +28,7 @@ android {
     defaultConfig {
         applicationId "com.kefflapp"
         minSdkVersion 16
-        targetSdkVersion 22
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         ndk {
@@ -43,10 +43,26 @@ android {
             include "armeabi-v7a", "x86"
         }
     }
+
+    signingConfigs {
+        release {
+            storeFile file("./keflapp-release-key.keystore")
+            storePassword "78963214"
+            keyAlias "keflapp-release"
+            keyPassword "78963214"
+        }
+    }
+
+    lintOptions { 
+        checkReleaseBuilds false 
+        }
+
     buildTypes {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
+            minifyEnabled true
         }
     }
     // applicationVariants are e.g. debug, release
