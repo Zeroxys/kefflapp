@@ -5,6 +5,8 @@ import OpenSocket from 'socket.io-client'
 
 import MapContent from '../../components/Map/MapContent'
 
+import Modal from '../../components/Modal/Modal'
+
 const {width, height} = Dimensions.get('window')
 const socket = OpenSocket('http://159.65.186.61:8001')
 
@@ -30,28 +32,29 @@ class HomeScreen extends Component {
       inputQuantity : '',
       inputLiters : false,
       inputKilos : false,
+      modal: false
     }
 
     this.locationHandler = this.locationHandler.bind(this)
     this.onPurchase = this.onPurchase.bind(this)
   }
- 
+
   onPurchase = () => {
     console.warn(this.state.inputQuantity)
     this.setState( prevState => {
       return {
-        inputQuantity : prevState.inputQuantity = ''
+        inputQuantity : prevState.inputQuantity = '',
+        modal : !prevState.modal
       }
     })
+    console.warn('comprandsado')
   }
 
   // watcher que vigilara la posicion actual
   // y cambiara el marker
-  /*_getWatchPosition = () => {
-    let watchId = navigator.geolocation.watchPosition( pos => {
-      let lat = pos.coords.latitude
-      let long = pos.coords.longitude
-
+  _getWatchPosition = () => {
+    this.watchId = navigator.geolocation.watchPosition( (pos) => {
+      console.warn(pos)
       let lastRegion = {
         nativeEvent : {
           coordinate : {
@@ -61,8 +64,12 @@ class HomeScreen extends Component {
         }
       }
       this.locationHandler(lastRegion)      
-    })
-  }*/
+    },(error) => console.warn('zczxc'),
+    { enableHighAccuracy: true, maximumAge: 1000, distanceFilter: 10 })
+
+    console.warn(this.watchId)
+
+  }
 
   showTextInputPrice = (e) => {
     //console.warn(e)
@@ -106,9 +113,8 @@ class HomeScreen extends Component {
       }
       this.locationHandler(coordsEvent)
     }, error_handler => {
-      if(error_handler) alert('get current position failed')
+      if(error_handler) alert('Fallo el obtener tu posicion, asegurate de tener el gps activado')
     })
-    //this._getWatchPosition()
   }
 
   locationHandler = event => {
@@ -162,6 +168,7 @@ class HomeScreen extends Component {
   componentDidMount () {
     this.getCurrentPosition()
     this.getUserLogin()
+    this._getWatchPosition()
 
     socket.on('connection')
     socket.emit('createOrder', {
@@ -173,7 +180,23 @@ class HomeScreen extends Component {
     } )
   } 
 
+  componentWillUnmount() {
+    console.warn('se va a desmontar este cuate')
+    console.warn(this.watchId, '-----> se desmonta')
+    navigator.geolocation.clearWatch(this.watchId);
+  }
+
+  closeModal = (event) => {
+    console.warn('close...!!!')
+    this.setState( (prevState) => {
+      return {
+        modal : prevState.modal = false
+      }
+    })
+  } 
+
   render () {
+
     const Menu = (<View style={style.content}>
                   <View style={style.header}>
                     <Image
@@ -240,6 +263,9 @@ class HomeScreen extends Component {
             }
           })
         }}>
+ 
+        <Modal closeModal={this.closeModal} visible={this.state.modal}/>
+
         <MapContent
           marker = {this.state.marker}
           initialRegion = {this.state.currentLocation}
