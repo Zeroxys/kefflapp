@@ -102,7 +102,7 @@ class App extends Component {
           isLoading : prevState.isLoading = true
         }
       })
-      axios.post('http://159.65.186.61:8001/api/v1/customer/login', {
+      axios.post('http://178.128.70.168:8001/api/v1/customer/login', {
         ...value
       })
       .then( res => {
@@ -140,7 +140,7 @@ class App extends Component {
           isLoading : !prevState.isLoading
         }
       })
-      axios.post('http://159.65.186.61:8001/api/v1/customer', {
+      axios.post('http://178.128.70.168:8001/api/v1/customer', {
         ...value
       })
       .then( res => {

@@ -8,7 +8,7 @@ import MapContent from '../../components/Map/MapContent'
 import Modal from '../../components/Modal/Modal'
 
 const {width, height} = Dimensions.get('window')
-const socket = OpenSocket('http://159.65.186.61:8001')
+const socket = OpenSocket('http://178.128.70.168:8001')
 
 class HomeScreen extends Component {
   constructor (props) {
@@ -171,13 +171,31 @@ class HomeScreen extends Component {
     this._getWatchPosition()
 
     socket.on('connection')
-    socket.emit('createOrder', {
+
+    let data = {
       lat: '17.99740963',
       lng: '-92.9406558',
       quantity: '40',
-      idProducto: '5b3bfb3eaec2945dc9d17a90',
-      idCostumer: '5b440136aec2945dc9d17a92',
-    } )
+      idProducto: '5b9b4974d853ca522747a686',
+      idCostumer: '5b9ae38d30dc424482f7cb1a',
+    }
+
+    socket.emit('createOrder', data, (respuesta) => {
+      respuesta[1].costumer = true 
+      console.warn('Join que envio desde costumer ', respuesta)
+      socket.emit('join', respuesta, function (err) {
+        if(err) {
+          alert(err)
+        }else{
+          console.warn('Se ha agregado un vendedor '+ respuesta[0].id)
+        }
+      })
+    })
+
+    socket.on('coordinates', (coordinates) => {
+      console.warn(coordinates)
+     })
+
   } 
 
   componentWillUnmount() {

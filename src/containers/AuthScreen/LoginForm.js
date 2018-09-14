@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import {StyleSheet,Dimensions, TouchableOpacity} from 'react-native'
 import {View, Text} from 'react-native-animatable'
 import t from 'tcomb-form-native'
-import axios from 'axios'
 
 import {LoginUser, formStyles, options} from '../../utils/LoginModel'
 import ButtonRegister from '../../components/UI/Button'
