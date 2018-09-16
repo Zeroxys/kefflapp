@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import SideMenu from 'react-native-side-menu'
 import {Dimensions, StyleSheet, View, Text, Image, AsyncStorage} from 'react-native'
 import OpenSocket from 'socket.io-client'
+import axios from 'axios'
 
 import MapContent from '../../components/Map/MapContent'
 
@@ -14,6 +15,9 @@ class HomeScreen extends Component {
   constructor (props) {
     super(props)
     this.state = {
+
+      customerItem : {},
+
       currentLocation : {
         latitude : 17.989456,
         longitude : -92.947506,
@@ -40,21 +44,53 @@ class HomeScreen extends Component {
   }
 
   onPurchase = () => {
-    console.warn(this.state.inputQuantity)
-    this.setState( prevState => {
+
+    /*this.setState( prevState => {
       return {
         inputQuantity : prevState.inputQuantity = '',
         modal : !prevState.modal
       }
-    })
-    console.warn('comprandsado')
+    })*/
+    
+    let data = {
+      lat: this.state.currentLocation.latitude,
+      lng: this.state.currentLocation.longitude,
+      quantity: '40',
+      idProducto: '5b9b4974d853ca522747a686',
+      idCostumer: '5b9ae38d30dc424482f7cb1a',
+    }
+
+    axios.post('http://178.128.70.168:8001/api/v1/createOrder', data).then(res => {
+
+      console.warn(res.data.objOrder)
+
+      this.setState( prevState => {
+        return {
+          customerItem : prevState.customerItem = res.data.objOrder
+        }
+      })
+
+
+      socket.emit('createOrder', this.state.customerItem, (respuesta) => {
+        respuesta[1].costumer = true 
+        console.warn('Mi origen -----> ',respuesta)
+        socket.emit('join', respuesta, function (err) {
+          if(err) {
+            alert(err)
+          }else{
+            console.warn('Se ha agregado un vendedor '+ respuesta[0].id)
+          }
+        })
+      })
+
+    }).catch(err => console.warn('error --->',err))
+
   }
 
   // watcher que vigilara la posicion actual
   // y cambiara el marker
   _getWatchPosition = () => {
     this.watchId = navigator.geolocation.watchPosition( (pos) => {
-      console.warn(pos)
       let lastRegion = {
         nativeEvent : {
           coordinate : {
@@ -171,26 +207,6 @@ class HomeScreen extends Component {
     this._getWatchPosition()
 
     socket.on('connection')
-
-    let data = {
-      lat: '17.99740963',
-      lng: '-92.9406558',
-      quantity: '40',
-      idProducto: '5b9b4974d853ca522747a686',
-      idCostumer: '5b9ae38d30dc424482f7cb1a',
-    }
-
-    socket.emit('createOrder', data, (respuesta) => {
-      respuesta[1].costumer = true 
-      console.warn('Join que envio desde costumer ', respuesta)
-      socket.emit('join', respuesta, function (err) {
-        if(err) {
-          alert(err)
-        }else{
-          console.warn('Se ha agregado un vendedor '+ respuesta[0].id)
-        }
-      })
-    })
 
     socket.on('coordinates', (coordinates) => {
       console.warn(coordinates)
