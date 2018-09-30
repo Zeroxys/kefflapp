@@ -22,14 +22,14 @@ def enableSeparateBuildPerCPUArchitecture = false
 def enableProguardInReleaseBuilds = false
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 27
     buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.kefflapp"
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 106
-        versionName '3'
+        versionCode 109
+        versionName '9'
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }

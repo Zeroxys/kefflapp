@@ -43,11 +43,21 @@ class App extends Component {
 
   // Make the facebook Login..
   _facebookLoginManager = () => {
-    LoginManager.logInWithReadPermissions(['public_profile']).then( res => {
+    LoginManager.logInWithReadPermissions(['public_profile','email']).then( res => {
         if(res) {          
           AccessToken.getCurrentAccessToken().then( res => {
-            axios.get(`https://graph.facebook.com/v3.0/me?fields=id,name,picture&access_token=${res.accessToken}`).then( res => {
-            
+            axios.get(`https://graph.facebook.com/v3.0/me?fields=id,name,picture.type(200),email&access_token=${res.accessToken}`).then( res => {
+
+              axios.post('http://178.128.70.168:8001/api/v1/customer',{
+                name : res.data.name,
+                email : res.data.email,
+                password : res.data.password,
+                phone: res.data.phone || '',
+                image : 'asdasda'
+              }).then(res => {
+                alert(res)
+              }).catch( err => alert(err))
+
               this.setState(prevState => {
                 return {
                   facebookManager : prevState.facebookManager = {...res.data},
@@ -189,6 +199,7 @@ class App extends Component {
     OneSignal.init("f2334502-2b91-4bdd-bcee-5a948515c958")
     this.checkUserLogin()
   }
+
 
   componentDidMount () {
     setTimeout( () => {

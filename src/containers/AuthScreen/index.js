@@ -19,10 +19,6 @@ class AuthScreen extends Component {
     }
   }
 
-  /*state = {
-    visibleForm : null
-  }*/
-
   componentWillUpdate (nextProps) {
     if(!this.props.isLoggedIn && nextProps.isLoggedIn) {
       this._hideAuthScreen()
@@ -74,8 +70,7 @@ class AuthScreen extends Component {
         onCreateAccountPress={() => this._setVisibleForm('SIGNUP')}
         onLinkPress={() => this._setVisibleForm('LOGIN')}/>
     }
-
-    //'#4fc3f7', '#3b5998', '#192f6a'
+    
     return (
       <LinearGradient colors={['#00acd2', '#034d88']} style={styles.linearGradient}>
         <StatusBar

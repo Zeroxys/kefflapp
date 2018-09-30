@@ -18,6 +18,8 @@ class HomeScreen extends Component {
 
       customerItem : {},
 
+      products : null,
+
       currentLocation : {
         latitude : 17.989456,
         longitude : -92.947506,
@@ -44,22 +46,20 @@ class HomeScreen extends Component {
   }
 
   onPurchase = () => {
-
-    /*this.setState( prevState => {
-      return {
-        inputQuantity : prevState.inputQuantity = '',
-        modal : !prevState.modal
-      }
-    })*/
     
+    console.warn(this.state.products[1]._id)
+
     let data = {
       lat: this.state.currentLocation.latitude,
       lng: this.state.currentLocation.longitude,
-      quantity: '40',
-      idProducto: '5b9b4974d853ca522747a686',
+      quantity: this.state.inputQuantity,
+      idProducto: this.state.products[1]._id,
       idCostumer: '5b9ae38d30dc424482f7cb1a',
     }
 
+    console.warn(data)
+
+    // Este ya no se usa
     axios.post('http://178.128.70.168:8001/api/v1/createOrder', data).then(res => {
 
       console.warn(res.data.objOrder)
@@ -69,7 +69,6 @@ class HomeScreen extends Component {
           customerItem : prevState.customerItem = res.data.objOrder
         }
       })
-
 
       socket.emit('createOrder', this.state.customerItem, (respuesta) => {
         respuesta[1].costumer = true 
@@ -108,11 +107,8 @@ class HomeScreen extends Component {
   }
 
   showTextInputPrice = (e) => {
-    //console.warn(e)
-    //console.warn('pushpush')
     this.setState( (prevState) => {
       return {
-        //showInputPrice : !prevState.showInputPrice
         inputQuantity : prevState.inputQuantity = e.replace(/[^0-9]/g,'')
       }
     })
@@ -179,7 +175,7 @@ class HomeScreen extends Component {
       let fbUser  = JSON.parse(await AsyncStorage.getItem('fb_token'))
       let mailUser = JSON.parse(await AsyncStorage.getItem('user_token'))
 
-      //console.warn(mailUser)
+      console.warn(fbUser)
 
       if( fbUser) {
         this.setState(prevState => {
@@ -201,7 +197,21 @@ class HomeScreen extends Component {
     } 
   }
 
+  getProductIds = () => {
+    axios.get('http://178.128.70.168:8001/api/v1/products').then(res => {
+      let result = res.data.data.result
+      this.setState(prevState => {
+        return {
+          products : prevState.products = [...result]
+        }
+      })
+    }).catch(err => {
+      console.warn(err)
+    })
+  }
+
   componentDidMount () {
+    this.getProductIds()
     this.getCurrentPosition()
     this.getUserLogin()
     this._getWatchPosition()

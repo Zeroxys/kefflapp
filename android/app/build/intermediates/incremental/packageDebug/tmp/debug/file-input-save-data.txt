@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Feb 11 10:32:20 CST 2016
+#Sun Sep 16 11:18:46 CDT 2018
 17.baseType=DIRECTORY
 4.path=lib/x86/libicu_common.so
 25.base=/home/miguel/Dev/kefflapp/android/app/build/intermediates/transforms/stripDebugSymbol/debug/0
