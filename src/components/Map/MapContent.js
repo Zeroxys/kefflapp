@@ -11,6 +11,9 @@ const MapContent = props => {
   return (
     <View style={styles.mapContent}>
       <MapView
+        //Seller information
+        truckerInformation={props.truckerInformation}
+
         marker = {props.marker}
         initialRegion={props.initialRegion}
         onPress={props.OnPress}

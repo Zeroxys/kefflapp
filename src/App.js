@@ -46,27 +46,31 @@ class App extends Component {
     LoginManager.logInWithReadPermissions(['public_profile','email']).then( res => {
         if(res) {          
           AccessToken.getCurrentAccessToken().then( res => {
-            axios.get(`https://graph.facebook.com/v3.0/me?fields=id,name,picture.type(200),email&access_token=${res.accessToken}`).then( res => {
+
+            axios.get(`https://graph.facebook.com/v3.0/me?fields=id,name,picture.type(large),email&access_token=${res.accessToken}`).then(res => {
+
+              this._saveProfile('fb_token', res)
+              res = res.data
 
               axios.post('http://178.128.70.168:8001/api/v1/customer',{
-                name : res.data.name,
-                email : res.data.email,
-                password : res.data.password,
-                phone: res.data.phone || '',
-                image : 'asdasda'
+                name : res.name,
+                email : res.email,
+                password : res.id,
+                phone: res.phone || '',
+                image : res.picture.data.url
               }).then(res => {
-                alert(res)
-              }).catch( err => alert(err))
 
-              this.setState(prevState => {
-                return {
-                  facebookManager : prevState.facebookManager = {...res.data},
-                  isLoggedIn : prevState.isLoggedIn = true
-                } 
-              })
-              this._saveProfile('fb_token', res)
-                                 
+                this.setState(prevState => {
+                  return {
+                    isLoggedIn : prevState.isLoggedIn = true
+                  } 
+                })
+
+                this._saveProfile('fb_userId', res.data)
+              }).catch( err => console.warn('error ---->', err))
+                                               
             }).catch (err => {
+              console.warn('error....!!!! ',err)
               this.setState( prevState => {
                 return {
                   isLoggedIn : prevState.isLoggedIn = false
@@ -204,7 +208,7 @@ class App extends Component {
   componentDidMount () {
     setTimeout( () => {
       SplashScreen.hide()
-    },2000)
+    },1000)
   }
 
   render() {

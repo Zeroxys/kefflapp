@@ -3,24 +3,24 @@ import MapViewDirections from 'react-native-maps-directions'
 
 const apikey = "AIzaSyAq9Rhbmb3PM6SL2XFzy61Xi1-92huuUwk"
 
-const trukerUbication = {
-  latitude : 17.989456, 
-  longitude : -92.947506,
-}
-
 const MapDirections = (props) => {
 
+  console.warn(props)
+
+  let trukerInformation = props.truckerInformation || ''
+
   const onError = (err) => {
-    alert('Error al traer la ubicacion del chofer')
+    alert(err)
   }
 
   return (
     <MapViewDirections
+
       onError = {onError}
       strokeWidth={3}
       strokeColor="blue"
       origin={props.currentLocation}
-      destination={trukerUbication}
+      destination={trukerInformation}
       apikey={apikey}/>
   )
 }

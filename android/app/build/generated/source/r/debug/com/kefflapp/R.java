@@ -2934,14 +2934,16 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f020095;
         public static final int notification_bg_normal_pressed=0x7f020096;
         public static final int notification_icon_background=0x7f020097;
-        public static final int notification_template_icon_bg=0x7f02009e;
-        public static final int notification_template_icon_low_bg=0x7f02009f;
+        public static final int notification_template_icon_bg=0x7f0200a0;
+        public static final int notification_template_icon_low_bg=0x7f0200a1;
         public static final int notification_tile_bg=0x7f020098;
         public static final int notify_panel_notification_icon_bg=0x7f020099;
         public static final int src_assets_icon=0x7f02009a;
-        public static final int src_assets_icongas=0x7f02009b;
-        public static final int tooltip_frame_dark=0x7f02009c;
-        public static final int tooltip_frame_light=0x7f02009d;
+        public static final int src_assets_icon1=0x7f02009b;
+        public static final int src_assets_icongas=0x7f02009c;
+        public static final int src_assets_icongas1=0x7f02009d;
+        public static final int tooltip_frame_dark=0x7f02009e;
+        public static final int tooltip_frame_light=0x7f02009f;
     }
     public static final class id {
         public static final int ALT=0x7f0d0038;
@@ -3347,6 +3349,8 @@ containing a value of this type.
         public static final int Animation_AppCompat_DropDownUp=0x7f0a00a3;
         public static final int Animation_AppCompat_Tooltip=0x7f0a00a4;
         public static final int Animation_Catalyst_RedBox=0x7f0a00a5;
+        /**  Customize your theme here. 
+         */
         public static final int AppTheme=0x7f0a00a6;
         public static final int Base_AlertDialog_AppCompat=0x7f0a00a7;
         public static final int Base_AlertDialog_AppCompat_Light=0x7f0a00a8;

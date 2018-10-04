@@ -29,6 +29,8 @@ class HomeScreen extends Component {
 
       userName : null,
       userPicture : null,
+      userId : null,
+
       sideBarIsOpen : false,
       expand : true,
       marker : false,
@@ -38,7 +40,9 @@ class HomeScreen extends Component {
       inputQuantity : '',
       inputLiters : false,
       inputKilos : false,
-      modal: false
+      modal: false,
+
+      truckerInformation : ''
     }
 
     this.locationHandler = this.locationHandler.bind(this)
@@ -47,42 +51,50 @@ class HomeScreen extends Component {
 
   onPurchase = () => {
     
-    console.warn(this.state.products[1]._id)
+    console.warn('------ id producto ------>',this.state.products[1]._id)
+
+    console.warn('ID DE USUARIO --->', this.state.userId)
 
     let data = {
       lat: this.state.currentLocation.latitude,
       lng: this.state.currentLocation.longitude,
       quantity: this.state.inputQuantity,
       idProducto: this.state.products[1]._id,
-      idCostumer: '5b9ae38d30dc424482f7cb1a',
+      idCostumer: this.state.userId,
     }
 
     console.warn(data)
 
-    // Este ya no se usa
-    axios.post('http://178.128.70.168:8001/api/v1/createOrder', data).then(res => {
+    socket.emit('createOrder', data, (respuesta) => {
+      
+      let _self = this
 
-      console.warn(res.data.objOrder)
+      console.warn('Respuesta de mi orden creada ----->', respuesta)
 
-      this.setState( prevState => {
-        return {
-          customerItem : prevState.customerItem = res.data.objOrder
-        }
-      })
-
-      socket.emit('createOrder', this.state.customerItem, (respuesta) => {
-        respuesta[1].costumer = true 
-        console.warn('Mi origen -----> ',respuesta)
+      if(respuesta[0].seller === 0) {
+        console.warn('No se encontraron vendedores')
+      } else {
+        console.warn('Join que envio desde costumer ', respuesta)
+        respuesta[1].costumer = true
+      
         socket.emit('join', respuesta, function (err) {
+
+          console.warn(respuesta)
+
           if(err) {
             alert(err)
-          }else{
+          } else {
+            _self.setState(prevState => {
+              return {
+                truckerInformation : prevState.truckerInformation = respuesta[0].origin
+              }
+            })
             console.warn('Se ha agregado un vendedor '+ respuesta[0].id)
           }
         })
-      })
+      }
 
-    }).catch(err => console.warn('error --->',err))
+    })
 
   }
 
@@ -99,7 +111,7 @@ class HomeScreen extends Component {
         }
       }
       this.locationHandler(lastRegion)      
-    },(error) => console.warn('zczxc'),
+    },(error) => null,
     { enableHighAccuracy: true, maximumAge: 1000, distanceFilter: 10 })
 
     console.warn(this.watchId)
@@ -173,15 +185,18 @@ class HomeScreen extends Component {
   async getUserLogin () {
     try {
       let fbUser  = JSON.parse(await AsyncStorage.getItem('fb_token'))
+      let fbUserId  = JSON.parse(await AsyncStorage.getItem('fb_userId'))
       let mailUser = JSON.parse(await AsyncStorage.getItem('user_token'))
 
-      console.warn(fbUser)
+      console.warn('usuario de fb ---->',fbUser)
+      console.warn('id que viene de LA API ----->', fbUserId.loginResult._id)
 
       if( fbUser) {
         this.setState(prevState => {
           return {
             userName : prevState.userManager = fbUser.name,
-            userPicture : prevState.userPicture = fbUser.picture.data.url
+            userPicture : prevState.userPicture = fbUser.picture.data.url,
+            userId : prevState.userId = fbUserId.loginResult._id
           }
         })
       }if(mailUser){
@@ -205,7 +220,7 @@ class HomeScreen extends Component {
           products : prevState.products = [...result]
         }
       })
-    }).catch(err => {
+    }).catch(err => { 
       console.warn(err)
     })
   }
@@ -218,15 +233,9 @@ class HomeScreen extends Component {
 
     socket.on('connection')
 
-    socket.on('coordinates', (coordinates) => {
-      console.warn(coordinates)
-     })
-
   } 
 
   componentWillUnmount() {
-    console.warn('se va a desmontar este cuate')
-    console.warn(this.watchId, '-----> se desmonta')
     navigator.geolocation.clearWatch(this.watchId);
   }
 
@@ -244,7 +253,7 @@ class HomeScreen extends Component {
     const Menu = (<View style={style.content}>
                   <View style={style.header}>
                     <Image
-                      style={{width: 50, height: 50}}
+                      style={{width: 90, height: 90}}
                       source={ { uri: this.state.userPicture  } }
                     />
                     <View style={style.profileData}>
@@ -328,6 +337,9 @@ class HomeScreen extends Component {
           inputQuantity = {this.state.inputQuantity}
           inputLiters = {this.state.inputLiters}
           inputKilos = {this.state.inputKilos}
+
+          // Seller information
+          truckerInformation={this.state.truckerInformation}
           />
       </SideMenu>
     )

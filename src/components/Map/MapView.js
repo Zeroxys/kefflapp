@@ -29,7 +29,7 @@ const MapView = props => {
     ref = {props.Ref}>
 
     {marker}
-    <MapDirections currentLocation={props.initialRegion}/>
+    <MapDirections currentLocation={props.initialRegion} truckerInformation={props.truckerInformation}/>
     <Marker pinColor={'#2A56C6'} coordinate={trukerUbication} image={trukImg} />
   </Map>  
   )
