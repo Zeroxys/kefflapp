@@ -69,7 +69,7 @@ class HomeScreen extends Component {
       
       let _self = this
 
-      console.warn('Respuesta de mi orden creada ----->', respuesta)
+      console.warn('Respuesta de mi orden creada ----->', respuesta[0].destination)
 
       if(respuesta[0].seller === 0) {
         console.warn('No se encontraron vendedores')
