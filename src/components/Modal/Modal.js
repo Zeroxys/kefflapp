@@ -27,17 +27,17 @@ const ModalTicket = props => {
 
           <View>
             <Text>Cliente:</Text>
-            <Text style={styles.bold}>Nombre del Cliente que pedio el servicio</Text>
+            <Text style={styles.bold}>{props.userName}</Text>
           </View>
 
           <View>
             <Text>Dirección:</Text>
-            <Text style={styles.bold}>Dirección donde se llevara el pedido</Text>
+            <Text style={styles.bold}>{props.customerAdress}</Text>
           </View>
 
           <View>
             <Text>Kilos:</Text>
-            <Text style={styles.bold}>10 Kg</Text>
+            <Text style={styles.bold}>{props.quantity} Kg</Text>
           </View>
 
           <View>

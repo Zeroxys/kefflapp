@@ -3,7 +3,6 @@ import SideMenu from 'react-native-side-menu'
 import {Dimensions, StyleSheet, AsyncStorage} from 'react-native'
 import OpenSocket from 'socket.io-client'
 import axios from 'axios'
-import Geocoder from 'react-native-geocoder';
 
 import MenuContent from './sideMenu'
 
@@ -22,6 +21,7 @@ class HomeScreen extends Component {
     this.state = {
 
       customerItem : {},
+      customerAddress : null,
 
       products : null,
 
@@ -92,21 +92,17 @@ class HomeScreen extends Component {
 
     socket.emit('createOrder', data, (respuesta) => {
       
-      //let _self = this
+      console.warn('respuesta del create order--->',respuesta[0].origin)
 
-      console.warn('Respuesta de mi orden creada ----->', respuesta)
+      this.setState(prevState => {
+        return {
+          customerAddress : prevState.customerAddress = respuesta[0].origin
+        }
+      })
 
+      let _self = this
 
-      /*Geocoder.geocodeAddress(respuesta[0].destination).then(res => {
-          console.warn('GEOCODER---->', res[0].position)
-          return res[0].formattedAddress
-          _self.setState(prevState => {
-            return {
-              truckerInformation : prevState.truckerInformation = res[0].position
-            }
-          })
-      })*/
-      .catch(err => console.log(err))
+      //console.warn('Respuesta de mi orden creada ----->', respuesta)
 
       if(respuesta[0].seller === 0) {
         console.warn('No se encontraron vendedores')
@@ -120,13 +116,11 @@ class HomeScreen extends Component {
             alert(err)
           } else {
 
-            /*_self.setState(prevState => {
+            _self.setState(prevState => {
               return {
-                truckerInformation : prevState.truckerInformation = sellerAddress
+                modal : prevState.modal = true
               }
-            })*/
-
-            //console.warn('Se ha agregado un vendedor '+ respuesta[0].id)
+            })
           }
         })
       }
@@ -134,26 +128,6 @@ class HomeScreen extends Component {
     })
 
   }
-
-  // watcher que vigilara la posicion actual
-  // y cambiara el marker
-  /*_getWatchPosition = () => {
-    this.watchId = navigator.geolocation.watchPosition( (pos) => {
-      let lastRegion = {
-        nativeEvent : {
-          coordinate : {
-            latitude : pos.coords.latitude,
-            longitude :  pos.coords.longitude
-          }
-        }
-      }
-      this.locationHandler(lastRegion)      
-    },(error) => null,
-    { enableHighAccuracy: true, maximumAge: 1000, distanceFilter: 10 })
-
-    console.warn(this.watchId)
-
-  }*/
 
   showTextInputPrice = (e) => {
     this.setState( (prevState) => {
@@ -224,9 +198,6 @@ class HomeScreen extends Component {
       let fbUser  = JSON.parse(await AsyncStorage.getItem('fb_token'))
       let fbUserId  = JSON.parse(await AsyncStorage.getItem('fb_userId'))
       let mailUser = JSON.parse(await AsyncStorage.getItem('user_token'))
-
-      //console.warn('usuario de fb ---->',fbUser)
-      //console.warn('id que viene de LA API ----->', fbUserId.loginResult._id)
 
       if( fbUser) {
         this.setState(prevState => {
@@ -300,7 +271,12 @@ class HomeScreen extends Component {
           })
         }}>
  
-        <Modal closeModal={this.closeModal} visible={this.state.modal}/>
+        <Modal 
+          closeModal={this.closeModal} 
+          visible={this.state.modal}
+          userName={this.state.userName}
+          quantity={this.state.inputQuantity}
+          customerAdress={this.state.customerAddress}/>
 
         <MapContent
           marker = {this.state.marker}
