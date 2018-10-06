@@ -5,9 +5,9 @@ const apikey = "AIzaSyAq9Rhbmb3PM6SL2XFzy61Xi1-92huuUwk"
 
 const MapDirections = (props) => {
 
-  console.warn(props)
+  //console.warn(props)
 
-  console.warn('MAPVIEW---->', props.truckerInformation)
+  //console.warn('MAPVIEW---->', props.truckerInformation)
 
   let trukerInformation = props.truckerInformation || ''
 

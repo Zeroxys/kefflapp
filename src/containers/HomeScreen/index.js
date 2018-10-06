@@ -1,11 +1,13 @@
 import React, {Component} from 'react'
 import SideMenu from 'react-native-side-menu'
-import {Dimensions, StyleSheet, View, Text, Image, AsyncStorage} from 'react-native'
+import {Dimensions, StyleSheet, AsyncStorage} from 'react-native'
 import OpenSocket from 'socket.io-client'
 import axios from 'axios'
 import Geocoder from 'react-native-geocoder';
 
-Geocoder.fallbackToGoogle('AIzaSyAw396k4T2psyghFf2PPI0FZn8P9jEYVLU');
+import MenuContent from './sideMenu'
+
+//Geocoder.fallbackToGoogle('AIzaSyAw396k4T2psyghFf2PPI0FZn8P9jEYVLU');
 
 import MapContent from '../../components/Map/MapContent'
 
@@ -95,15 +97,15 @@ class HomeScreen extends Component {
       console.warn('Respuesta de mi orden creada ----->', respuesta)
 
 
-      Geocoder.geocodeAddress(respuesta[0].destination).then(res => {
+      /*Geocoder.geocodeAddress(respuesta[0].destination).then(res => {
           console.warn('GEOCODER---->', res[0].position)
-          //return res[0].formattedAddress
-          /*_self.setState(prevState => {
+          return res[0].formattedAddress
+          _self.setState(prevState => {
             return {
               truckerInformation : prevState.truckerInformation = res[0].position
             }
-          })*/
-      })
+          })
+      })*/
       .catch(err => console.log(err))
 
       if(respuesta[0].seller === 0) {
@@ -270,10 +272,6 @@ class HomeScreen extends Component {
 
   } 
 
-  componentWillUnmount() {
-    navigator.geolocation.clearWatch(this.watchId);
-  }
-
   closeModal = (event) => {
     //console.warn('close...!!!')
     this.setState( (prevState) => {
@@ -284,59 +282,9 @@ class HomeScreen extends Component {
   } 
 
   render () {
-
-    const Menu = (<View style={style.content}>
-                  <View style={style.header}>
-                    <Image
-                      style={{width: 90, height: 90}}
-                      source={ { uri: this.state.userPicture  } }
-                    />
-                    <View style={style.profileData}>
-                      <Text style={{color : 'white'}}>
-                        Bienvenido
-                      </Text>
-                      <Text style={{color : 'white'}}>
-                        {this.state.userName}
-                      </Text>
-                    </View>
-                  </View>
-                  <View style={style.mainContent}>
-                    <View style={style.block}>
-                      <Text>
-                        Perfil
-                      </Text>
-
-                      <Text>
-                        Mis Pedidos
-                      </Text>
-
-                      <Text>
-                        Pago
-                      </Text>
-
-                      <Text>
-                        Factura
-                      </Text>
-
-                      <Text>
-                        Acerca de la Aplicación
-                      </Text>
-
-                      <Text>
-                        Configuración
-                      </Text>
-
-                      <Text>
-                        Ayuda
-                      </Text>
-
-                      <Text>
-                        Legal
-                      </Text>
-                    </View>
-                  </View>
-                  </View>)
-
+    let Menu = <MenuContent
+                userPicture={this.state.userPicture}
+                userName={this.state.userName}/>
 
     return (
       <SideMenu 

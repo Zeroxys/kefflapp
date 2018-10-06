@@ -1,7 +1,6 @@
 import React from 'react'
 import {StyleSheet} from 'react-native'
 import Map, {Marker} from 'react-native-maps'
-import Aux from '../HOC/Aux'
 import MapDirections from './MapDirections'
 import trukImg from '../../assets/icon.png'
 
@@ -18,6 +17,10 @@ const MapView = props => {
     marker = <Marker pinColor={'#2A56C6'} coordinate={props.initialRegion}/>
   }
 
+  // Truck marker
+
+  console.warn(props.truckerInformation)
+
   return (
   <Map 
     showsCompass={false}
@@ -26,9 +29,11 @@ const MapView = props => {
     loadingBackgroundColor={'#2A56C6'}
     initialRegion={props.initialRegion}
     onPress={props.onPress}
-    ref = {props.Ref}>
+    ref = {props.Ref}
+    minZoomLevel={15}
+    maxZoomLevel={18}>
 
-    {marker}
+    {marker} 
     <MapDirections currentLocation={props.initialRegion} truckerInformation={props.truckerInformation}/>
     <Marker pinColor={'#2A56C6'} coordinate={trukerUbication} image={trukImg} />
   </Map>  

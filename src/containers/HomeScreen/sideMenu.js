@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {View,Text, StyleSheet, Image} from 'react-native'
 
 const style = StyleSheet.create({
@@ -45,54 +45,64 @@ const style = StyleSheet.create({
 })
 
 
-export default Menu = <View style={style.content}>
-        <View style={style.header}>
-          <Image
-            style={{width: 50, height: 50}}
-            source={ { /*uri: this.state.facebookManager.picture.data.url */} }
-          />
-          <View style={style.profileData}>
-            <Text style={{color : 'white'}}>
-              Bienvenido
-            </Text>
-            <Text style={{color : 'white'}}>
-              {/*this.state.facebookManager.name*/}
-            </Text>
-          </View>
-        </View>
-        <View style={style.mainContent}>
-          <View style={style.block}>
-            <Text>
-              Perfil
-            </Text>
+export default class Menu extends Component {
 
-            <Text>
-              Mis Pedidos
-            </Text>
+  constructor(props) {
+    super()
+  }
 
-            <Text>
-              Pago
-            </Text>
-
-            <Text>
-              Factura
-            </Text>
-
-            <Text>
-              Acerca de la Aplicación
-            </Text>
-
-            <Text>
-              Configuración
-            </Text>
-
-            <Text>
-              Ayuda
-            </Text>
-
-            <Text>
-              Legal
-            </Text>
-          </View>
+  render () {
+    return <View style={style.content}>
+      <View style={style.header}>
+        <Image
+          style={{width: 90, height: 90}}
+          source={ { uri: this.props.userPicture  } }
+        />
+        <View style={style.profileData}>
+          <Text style={{color : 'white'}}>
+            Bienvenido
+          </Text>
+          <Text style={{color : 'white'}}>
+            {this.props.userName}
+          </Text>
         </View>
       </View>
+      <View style={style.mainContent}>
+        <View style={style.block}>
+          <Text>
+            Perfil
+          </Text>
+
+          <Text>
+            Mis Pedidos
+          </Text>
+
+          <Text>
+            Pago
+          </Text>
+
+          <Text>
+            Factura
+          </Text>
+
+          <Text>
+            Acerca de la Aplicación
+          </Text>
+
+          <Text>
+            Configuración
+          </Text>
+
+          <Text>
+            Ayuda
+          </Text>
+
+          <Text>
+            Legal
+          </Text>
+        </View>
+      </View>
+    </View>
+  }
+
+}
