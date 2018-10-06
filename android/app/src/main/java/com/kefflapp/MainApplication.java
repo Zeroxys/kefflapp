@@ -2,6 +2,7 @@ package com.kefflapp;
 
 import android.app.Application;
 
+import com.devfd.RNGeocoder.RNGeocoderPackage;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookSdk;
 import com.facebook.reactnative.androidsdk.FBSDKPackage;
@@ -47,7 +48,8 @@ public class MainApplication extends Application implements ReactApplication {
           new SplashScreenReactPackage(),
           new VectorIconsPackage(),
           new FBSDKPackage(mCallbackManager),
-          new ReactNativeOneSignalPackage()
+          new ReactNativeOneSignalPackage(),
+          new RNGeocoderPackage()
 
       );
     }

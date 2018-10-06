@@ -3,6 +3,9 @@ import SideMenu from 'react-native-side-menu'
 import {Dimensions, StyleSheet, View, Text, Image, AsyncStorage} from 'react-native'
 import OpenSocket from 'socket.io-client'
 import axios from 'axios'
+import Geocoder from 'react-native-geocoder';
+
+Geocoder.fallbackToGoogle('AIzaSyAw396k4T2psyghFf2PPI0FZn8P9jEYVLU');
 
 import MapContent from '../../components/Map/MapContent'
 
@@ -51,9 +54,9 @@ class HomeScreen extends Component {
 
   onPurchase = () => {
     
-    console.warn('------ id producto ------>',this.state.products[1]._id)
+    //console.warn('------ id producto ------>',this.state.products[1]._id)
 
-    console.warn('ID DE USUARIO --->', this.state.userId)
+    //console.warn('ID DE USUARIO --->', this.state.userId)
 
     let data = {
       lat: this.state.currentLocation.latitude,
@@ -63,33 +66,65 @@ class HomeScreen extends Component {
       idCostumer: this.state.userId,
     }
 
-    console.warn(data)
+    //console.warn(data)
 
-    socket.emit('createOrder', data, (respuesta) => {
+    socket.on('coordinates', (coordinates) => {
       
       let _self = this
 
-      console.warn('Respuesta de mi orden creada ----->', respuesta[0].destination)
+      let coordinatesSeller = {
+        latitude : coordinates.lat,
+        longitude : coordinates.lng
+      }
+
+      this.setState(prevState => {
+        return {
+          truckerInformation : prevState.truckerInformation = coordinatesSeller
+        }
+      })
+
+      console.warn('COORDENADAS DEL VENDEDOR---->', coordinatesSeller)
+      console.warn('VENDEDOR STATE ----->', this.state.truckerInformation)
+      
+    })
+
+    socket.emit('createOrder', data, (respuesta) => {
+      
+      //let _self = this
+
+      console.warn('Respuesta de mi orden creada ----->', respuesta)
+
+
+      Geocoder.geocodeAddress(respuesta[0].destination).then(res => {
+          console.warn('GEOCODER---->', res[0].position)
+          //return res[0].formattedAddress
+          /*_self.setState(prevState => {
+            return {
+              truckerInformation : prevState.truckerInformation = res[0].position
+            }
+          })*/
+      })
+      .catch(err => console.log(err))
 
       if(respuesta[0].seller === 0) {
         console.warn('No se encontraron vendedores')
       } else {
-        console.warn('Join que envio desde costumer ', respuesta)
+        //console.warn('Join que envio desde costumer ', respuesta)
         respuesta[1].costumer = true
       
         socket.emit('join', respuesta, function (err) {
 
-          console.warn(respuesta)
-
           if(err) {
             alert(err)
           } else {
-            _self.setState(prevState => {
+
+            /*_self.setState(prevState => {
               return {
-                truckerInformation : prevState.truckerInformation = respuesta[0].origin
+                truckerInformation : prevState.truckerInformation = sellerAddress
               }
-            })
-            console.warn('Se ha agregado un vendedor '+ respuesta[0].id)
+            })*/
+
+            //console.warn('Se ha agregado un vendedor '+ respuesta[0].id)
           }
         })
       }
@@ -100,7 +135,7 @@ class HomeScreen extends Component {
 
   // watcher que vigilara la posicion actual
   // y cambiara el marker
-  _getWatchPosition = () => {
+  /*_getWatchPosition = () => {
     this.watchId = navigator.geolocation.watchPosition( (pos) => {
       let lastRegion = {
         nativeEvent : {
@@ -116,7 +151,7 @@ class HomeScreen extends Component {
 
     console.warn(this.watchId)
 
-  }
+  }*/
 
   showTextInputPrice = (e) => {
     this.setState( (prevState) => {
@@ -188,8 +223,8 @@ class HomeScreen extends Component {
       let fbUserId  = JSON.parse(await AsyncStorage.getItem('fb_userId'))
       let mailUser = JSON.parse(await AsyncStorage.getItem('user_token'))
 
-      console.warn('usuario de fb ---->',fbUser)
-      console.warn('id que viene de LA API ----->', fbUserId.loginResult._id)
+      //console.warn('usuario de fb ---->',fbUser)
+      //console.warn('id que viene de LA API ----->', fbUserId.loginResult._id)
 
       if( fbUser) {
         this.setState(prevState => {
@@ -229,7 +264,7 @@ class HomeScreen extends Component {
     this.getProductIds()
     this.getCurrentPosition()
     this.getUserLogin()
-    this._getWatchPosition()
+    //this._getWatchPosition()
 
     socket.on('connection')
 
@@ -240,7 +275,7 @@ class HomeScreen extends Component {
   }
 
   closeModal = (event) => {
-    console.warn('close...!!!')
+    //console.warn('close...!!!')
     this.setState( (prevState) => {
       return {
         modal : prevState.modal = false

@@ -7,6 +7,8 @@ const MapDirections = (props) => {
 
   console.warn(props)
 
+  console.warn('MAPVIEW---->', props.truckerInformation)
+
   let trukerInformation = props.truckerInformation || ''
 
   const onError = (err) => {
