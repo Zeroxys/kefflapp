@@ -92,7 +92,7 @@ class HomeScreen extends Component {
 
     socket.emit('createOrder', data, (respuesta) => {
       
-      console.warn('respuesta del create order--->',respuesta[0].origin)
+      console.warn('respuesta del create order--->',respuesta)
 
       this.setState(prevState => {
         return {

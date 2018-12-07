@@ -28,8 +28,8 @@ android {
         applicationId "com.kefflapp"
         minSdkVersion 16
         targetSdkVersion 27
-        versionCode 109
-        versionName '9'
+        versionCode 110
+        versionName '10'
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
